@@ -1,0 +1,34 @@
+.row {
+    display: grid;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column {
+    display: inline-grid;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.align-content-left {
+    text-align: left;
+}
+
+.align-content-center {
+    text-align: center;
+}
+
+.align-content-right {
+    text-align: right;
+}

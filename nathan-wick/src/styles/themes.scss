@@ -1,0 +1,11 @@
+@use 'colors' as colors;
+
+.light {
+    background: colors.$white;
+    color: colors.$black;
+}
+
+.dark {
+    background: colors.$black;
+    color: colors.$white;
+}

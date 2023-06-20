@@ -1,0 +1,28 @@
+@use 'colors' as colors;
+
+button {
+    background-image: linear-gradient(colors.$light-blue , colors.$blue);
+    border: none;
+    border-radius: 3em;
+    box-shadow:
+        0 -2px 8px colors.$blue,
+        0 2px 8px colors.$light-blue;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 2em;
+    padding: 1em 2em;
+    transition: 0.4s;
+}
+
+button:hover {
+    box-shadow:
+        0 -4px 16px colors.$blue,
+        0 4px 16px colors.$light-blue;
+}
+
+button:active {
+    box-shadow:
+        0 -8px 32px colors.$blue,
+        0 8px 32px colors.$light-blue;
+}
