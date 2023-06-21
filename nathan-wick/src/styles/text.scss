@@ -1,24 +1,17 @@
-h1 {
-    margin: 0;
-    padding: 50px 10px;
+.text-large {
+    display: inline-block;
+    font-size: 3em;
+    font-weight: bolder;
 }
 
-h2 {
-    margin: 0;
-    padding: 40px 10px;
+.text-medium {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em 1em;
 }
 
-h3 {
-    margin: 0;
-    padding: 30px 10px;
-}
-
-h4 {
-    margin: 0;
-    padding: 20px 10px;
-}
-
-h5 {
-    margin: 0;
-    padding: 10px 10px;
+.text-small {
+    display: inline-block;
+    font-size: 1em;
 }

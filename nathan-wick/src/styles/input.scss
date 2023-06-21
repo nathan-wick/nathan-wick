@@ -26,3 +26,47 @@ button:active {
         0 -8px 32px colors.$blue,
         0 8px 32px colors.$light-blue;
 }
+
+.button-small {
+    border-radius: 1.5em;
+    margin: 0.5em 1em;
+    padding: 0.5em 1em;
+}
+
+.button-purple {
+    background-image: linear-gradient(colors.$light-purple , colors.$purple);
+    box-shadow:
+        0 -2px 8px colors.$purple,
+        0 2px 8px colors.$light-purple;
+}
+
+.button-purple:hover {
+    box-shadow:
+        0 -4px 16px colors.$purple,
+        0 4px 16px colors.$light-purple;
+}
+
+.button-purple:active {
+    box-shadow:
+        0 -8px 32px colors.$purple,
+        0 8px 32px colors.$light-purple;
+}
+
+.button-yellow {
+    background-image: linear-gradient(colors.$light-yellow , colors.$yellow);
+    box-shadow:
+        0 -2px 8px colors.$yellow,
+        0 2px 8px colors.$light-yellow;
+}
+
+.button-yellow:hover {
+    box-shadow:
+        0 -4px 16px colors.$yellow,
+        0 4px 16px colors.$light-yellow;
+}
+
+.button-yellow:active {
+    box-shadow:
+        0 -8px 32px colors.$yellow,
+        0 8px 32px colors.$light-yellow;
+}
