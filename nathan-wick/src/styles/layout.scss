@@ -17,18 +17,36 @@
 }
 
 .container {
-    height: 100%;
-    width: 100%;
+    position: relative;
 }
 
-.align-content-left {
+.align-horizontal-left {
     text-align: left;
 }
 
-.align-content-center {
+.align-horizontal-center {
     text-align: center;
 }
 
-.align-content-right {
+.align-horizontal-right {
     text-align: right;
+}
+
+.align-vertical-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.padding-top-5 {
+    padding-top: 5rem;
+}
+
+.viewport-height-80 {
+    height: 80vh;
+}
+
+.width-100 {
+    width: 100%;
 }

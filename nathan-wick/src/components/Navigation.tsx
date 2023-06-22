@@ -10,47 +10,52 @@ const Navigation = () => {
 
     const {setTheme, theme,} = useContext(ThemeContext,);
 
-    return <div
-        className={`${theme} navigation row-2`}>
+    return <>
         <div
-            className="column">
+            className={`${theme} navigation row-2`}>
             <div
-                className="container align-content-left">
+                className="column">
                 <div
-                    className="text-medium">
+                    className="align-horizontal-left">
+                    {
+                        theme === `light`
+                            ? <button
+                                className="button-purple"
+                                onClick={() => setTheme(`dark`,)}>
+                                <Moon
+                                    color={colors.black}
+                                    height={16}
+                                    width={16} />
+                            </button>
+                            : <button
+                                className="button-yellow"
+                                onClick={() => setTheme(`light`,)}>
+                                <Sun
+                                    color={colors.black}
+                                    height={16}
+                                    width={16} />
+                            </button>
+                    }
+                    <div
+                        className="text-medium">
                     Nathan Wick
+                    </div>
                 </div>
-                {
-                    theme === `light`
-                        ? <button
-                            className="button-small button-purple"
-                            onClick={() => setTheme(`dark`,)}>
-                            <Moon
-                                color={colors.black}
-                                height={16}
-                                width={16} />
-                        </button>
-                        : <button
-                            className="button-small button-yellow"
-                            onClick={() => setTheme(`light`,)}>
-                            <Sun
-                                color={colors.black}
-                                height={16}
-                                width={16} />
-                        </button>
-                }
+            </div>
+            <div
+                className="column">
+                <div
+                    className="align-horizontal-right">
+                    <button>
+                    Contact
+                    </button>
+                </div>
             </div>
         </div>
         <div
-            className="column">
-            <div
-                className="container align-content-right">
-                <button>
-                    Contact
-                </button>
-            </div>
+            className="padding-top-5">
         </div>
-    </div>;
+    </>;
 
 };
 

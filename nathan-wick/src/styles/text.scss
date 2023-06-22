@@ -1,17 +1,18 @@
 .text-large {
     display: inline-block;
-    font-size: 3em;
+    font-size: 4rem;
     font-weight: bolder;
+    padding: 1rem;
 }
 
 .text-medium {
     display: inline-block;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 0.5em 1em;
+    padding: 1rem;
 }
 
 .text-small {
-    display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
+    padding: 1rem;
 }
