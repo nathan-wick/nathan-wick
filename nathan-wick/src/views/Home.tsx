@@ -20,6 +20,42 @@ const Home = () => <>
 
         </div>
     </div>
+    <div
+        className="row-3">
+        <div
+            className="column align-horizontal-center">
+            <div
+                className="text-large">
+                13,000+
+            </div>
+            <div
+                className="text-small">
+                Software Development Practice <b>Hours</b>
+            </div>
+        </div>
+        <div
+            className="column align-horizontal-center">
+            <div
+                className="text-large">
+                200,000+
+            </div>
+            <div
+                className="text-small">
+                <b>Lines</b> of Code Contributed
+            </div>
+        </div>
+        <div
+            className="column align-horizontal-center">
+            <div
+                className="text-large">
+                10+
+            </div>
+            <div
+                className="text-small">
+                Completed Software <b>Projects</b>
+            </div>
+        </div>
+    </div>
 </>;
 
 export default Home;

@@ -2,13 +2,15 @@ import React, {useContext,} from "react";
 import Moon from "../icons/Moon";
 import Sun from "../icons/Sun";
 import {ThemeContext,} from "../contexts/Theme";
+import {WindowContext,} from "../contexts/Window";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import colors from "../styles/colors.scss";
 
 const Navigation = () => {
 
-    const {setTheme, theme,} = useContext(ThemeContext,);
+    const {setTheme, theme,} = useContext(ThemeContext,),
+        {scroll,} = useContext(WindowContext,);
 
     return <>
         <div
@@ -37,7 +39,9 @@ const Navigation = () => {
                             </button>
                     }
                     <div
-                        className="text-medium">
+                        className={`${scroll < 1
+                            ? `hide`
+                            : `show`} text-medium`}>
                     Nathan Wick
                     </div>
                 </div>
