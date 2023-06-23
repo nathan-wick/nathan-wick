@@ -1,0 +1,9 @@
+@use 'colors';
+
+.background-dark-white {
+    background: colors.$dark-white;
+}
+
+.background-light-black {
+    background: colors.$light-black;
+}

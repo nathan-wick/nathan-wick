@@ -14,7 +14,7 @@ const Navigation = () => {
 
     return <>
         <div
-            className={`${theme} navigation row-2`}>
+            className={`navigation row-2 ${theme}`}>
             <div
                 className="column">
                 <div
@@ -39,9 +39,9 @@ const Navigation = () => {
                             </button>
                     }
                     <div
-                        className={`${scroll < 1
+                        className={`text-medium ${scroll < 1
                             ? `hide`
-                            : `show`} text-medium`}>
+                            : `show`}`}>
                     Nathan Wick
                     </div>
                 </div>

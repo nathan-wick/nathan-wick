@@ -1,0 +1,49 @@
+@use 'colors' as colors;
+
+.triangle-dark-white-top-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
+        transparent 0%,
+        transparent 50%,
+        colors.$dark-white 50%,
+        colors.$dark-white 100%
+    );
+}
+
+.triangle-dark-white-bottom-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
+        colors.$dark-white 0%,
+        colors.$dark-white 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
+.triangle-light-black-top-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
+        transparent 0%,
+        transparent 50%,
+        colors.$light-black 50%,
+        colors.$light-black 100%
+    );
+}
+
+.triangle-light-black-bottom-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
+        colors.$light-black 0%,
+        colors.$light-black 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
