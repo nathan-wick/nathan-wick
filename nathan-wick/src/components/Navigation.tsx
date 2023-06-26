@@ -6,6 +6,7 @@ import {WindowContext,} from "../contexts/Window";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import colors from "../styles/colors.scss";
+import person from "../information/person";
 
 const Navigation = () => {
 
@@ -42,7 +43,7 @@ const Navigation = () => {
                         className={`text-medium ${scroll < 1
                             ? `hide`
                             : `show`}`}>
-                    Nathan Wick
+                        {person.name}
                     </div>
                 </div>
             </div>

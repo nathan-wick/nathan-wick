@@ -8,6 +8,8 @@ $light-purple: #cdb4db;
 $purple: #B591CA;
 $light-yellow: #F9D79F;
 $yellow: #f6bd60;
+$light-red: #F57A89;
+$red: #F25467;
 
 :export {
     white: $white;
@@ -20,4 +22,6 @@ $yellow: #f6bd60;
     purple: $purple;
     light-yellow: $light-yellow;
     yellow: $yellow;
+    light-red: $light-red;
+    red: $red;
 }

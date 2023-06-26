@@ -70,3 +70,22 @@ button:active {
         0 -8px 32px colors.$yellow,
         0 8px 32px colors.$light-yellow;
 }
+
+.button-red {
+    background-image: linear-gradient(colors.$light-red , colors.$red);
+    box-shadow:
+        0 -2px 8px colors.$red,
+        0 2px 8px colors.$light-red;
+}
+
+.button-red:hover {
+    box-shadow:
+        0 -4px 16px colors.$red,
+        0 4px 16px colors.$light-red;
+}
+
+.button-red:active {
+    box-shadow:
+        0 -8px 32px colors.$red,
+        0 8px 32px colors.$light-red;
+}
