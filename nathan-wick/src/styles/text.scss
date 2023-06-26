@@ -1,3 +1,5 @@
+@use 'colors' as colors;
+
 .text-large {
     display: inline-block;
     font-size: 4rem;
@@ -18,4 +20,8 @@
     font-size: 1rem;
     padding: 1rem;
     transition: 1.2s;
+}
+
+.text-muted {
+    color: colors.$gray;
 }

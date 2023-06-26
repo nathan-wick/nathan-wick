@@ -23,7 +23,11 @@ const Heading = () => {
                     </div>
                     <div
                         className="text-small">
-                        {person.title}
+                        {person.title}<br />
+                        <i
+                            className="text-muted">
+                            {person.tagline}
+                        </i>
                     </div>
                 </div>
             </div>
