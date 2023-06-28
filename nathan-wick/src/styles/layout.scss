@@ -39,12 +39,21 @@
     transform: translateY(-50%);
 }
 
+.padding-1 {
+    padding: 1rem;
+}
+
 .padding-top-5 {
     padding-top: 5rem;
 }
 
 .viewport-height-90 {
     height: 90vh;
+}
+
+.width-fit-content {
+    display: inline-block;
+    width: fit-content;
 }
 
 .width-100 {

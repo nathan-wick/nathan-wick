@@ -1,13 +1,21 @@
 import {Education,} from "../types/Education";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import universityOfCincinnatiBackgroundImageDark from "../images/university-of-cincinnati-night.webp";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import universityOfCincinnatiBackgroundImageLight from "../images/university-of-cincinnati-day.jpeg";
 
 const educations: Education[] = [
     {
+        "backgroundImageDark": universityOfCincinnatiBackgroundImageDark,
+        "backgroundImageLight": universityOfCincinnatiBackgroundImageLight,
         "degree": `Bachelor of Science`,
         "featuredCoursework": [
-            `Enterprise Application Development`,
-            `Mobile Device Programming`,
-            `Web Server Application Development`,
             `Database Management 2`,
+            `Mobile Device Programming`,
+            `Enterprise Application Development`,
+            `Web Server Application Development`,
             `Management in Information Technology`,
         ],
         "gradePointAverage": 4,

@@ -1,9 +1,24 @@
 @use 'colors';
 
+.background-white {
+    background: colors.$white;
+}
+
 .background-dark-white {
     background: colors.$dark-white;
+}
+
+.background-black {
+    background: colors.$black;
 }
 
 .background-light-black {
     background: colors.$light-black;
 }
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }

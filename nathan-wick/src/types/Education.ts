@@ -5,4 +5,6 @@ export declare interface Education {
     graduation: Date,
     gradePointAverage: number,
     featuredCoursework: string[],
+    backgroundImageLight: string,
+    backgroundImageDark: string,
 }

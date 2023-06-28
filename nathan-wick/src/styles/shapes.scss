@@ -52,3 +52,51 @@
         transparent 100%
     );
 }
+
+.triangle-white-bottom-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
+        colors.$white 0%,
+        colors.$white 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
+.triangle-white-top-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
+        transparent 0%,
+        transparent 50%,
+        colors.$white 50%,
+        colors.$white 100%
+    );
+}
+
+.triangle-black-bottom-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
+        colors.$black 0%,
+        colors.$black 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
+.triangle-black-top-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
+        transparent 0%,
+        transparent 50%,
+        colors.$black 50%,
+        colors.$black 100%
+    );
+}
