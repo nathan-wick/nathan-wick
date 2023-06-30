@@ -16,6 +16,26 @@
     background: colors.$light-black;
 }
 
+.background-red {
+    background-image: linear-gradient(colors.$light-red , colors.$red);
+}
+
+.background-yellow {
+    background-image: linear-gradient(colors.$light-yellow , colors.$yellow);
+}
+
+.background-green {
+    background-image: linear-gradient(colors.$light-green , colors.$green);
+}
+
+.background-blue {
+    background-image: linear-gradient(colors.$light-blue , colors.$blue);
+}
+
+.background-purple {
+    background-image: linear-gradient(colors.$light-purple , colors.$purple);
+}
+
 .parallax {
     background-attachment: fixed;
     background-size: cover;

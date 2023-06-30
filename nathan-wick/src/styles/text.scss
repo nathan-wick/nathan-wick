@@ -1,5 +1,9 @@
 @use 'colors' as colors;
 
+li {
+    padding: 0.2rem;
+}
+
 .text-large {
     display: inline-block;
     font-size: 4rem;
@@ -20,6 +24,10 @@
     font-size: 1rem;
     padding: 1rem;
     transition: 1.2s;
+}
+
+.text-black {
+    color: colors.$black;
 }
 
 .text-muted {

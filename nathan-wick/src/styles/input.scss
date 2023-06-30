@@ -4,9 +4,6 @@ button {
     background-image: linear-gradient(colors.$light-blue , colors.$blue);
     border: none;
     border-radius: 3rem;
-    box-shadow:
-        0 -2px 8px colors.$blue,
-        0 2px 8px colors.$light-blue;
     font-family: inherit;
     font-size: 1rem;
     font-weight: bold;
@@ -35,9 +32,6 @@ button:active {
 
 .button-purple {
     background-image: linear-gradient(colors.$light-purple , colors.$purple);
-    box-shadow:
-        0 -2px 8px colors.$purple,
-        0 2px 8px colors.$light-purple;
 }
 
 .button-purple:hover {
@@ -54,9 +48,6 @@ button:active {
 
 .button-yellow {
     background-image: linear-gradient(colors.$light-yellow , colors.$yellow);
-    box-shadow:
-        0 -2px 8px colors.$yellow,
-        0 2px 8px colors.$light-yellow;
 }
 
 .button-yellow:hover {
@@ -73,9 +64,6 @@ button:active {
 
 .button-red {
     background-image: linear-gradient(colors.$light-red , colors.$red);
-    box-shadow:
-        0 -2px 8px colors.$red,
-        0 2px 8px colors.$light-red;
 }
 
 .button-red:hover {

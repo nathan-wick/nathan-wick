@@ -1,5 +1,14 @@
 @use 'colors' as colors;
 
+.pill {
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+}
+
 .overlap-triangle {
     bottom: 0;
     position: absolute;
