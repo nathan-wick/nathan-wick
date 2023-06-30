@@ -4,7 +4,7 @@ import {Education,} from "../types/Education";
 import universityOfCincinnatiBackgroundImageDark from "../images/university-of-cincinnati-night.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import universityOfCincinnatiBackgroundImageLight from "../images/university-of-cincinnati-day.jpeg";
+import universityOfCincinnatiBackgroundImageLight from "../images/university-of-cincinnati-day.webp";
 
 const educations: Education[] = [
     {

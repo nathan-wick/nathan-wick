@@ -1,8 +1,8 @@
 import {ThemeContext,} from "../../contexts/Theme";
-import educations from "../../information/educations";
+import experiences from "../../information/experiences";
 import {useContext,} from "react";
 
-const Educations = () => {
+const Experience = () => {
 
     const {theme,} = useContext(ThemeContext,);
 
@@ -11,18 +11,18 @@ const Educations = () => {
             className="align-horizontal-center">
             <div
                 className="text-large">
-                Education
+                Experience
             </div>
         </div>
         {
-            educations.map((education, educationIndex,) => <div
-                key={educationIndex}
+            experiences.map((experience, experienceIndex,) => <div
+                key={experienceIndex}
                 className="parallax align-horizontal-center"
                 style={{"backgroundImage": `url(${theme === `light`
-                    ? education.backgroundImageLight
-                    : education.backgroundImageDark})`,}}>
+                    ? experience.backgroundImageLight
+                    : experience.backgroundImageDark})`,}}>
                 {
-                    educationIndex === 0 &&
+                    experienceIndex === 0 &&
                     <div
                         className={theme === `light`
                             ? `triangle-white-bottom-left`
@@ -30,45 +30,49 @@ const Educations = () => {
                     </div>
                 }
                 <div
-                    className={`width-fit-content padding-1 ${theme === `light`
+                    className={`width-fit-content max-width-30 padding-1 ${theme === `light`
                         ? `background-white`
                         : `background-black`}`}>
                     <div
                         className="text-medium">
-                        {education.title}
+                        {experience.title}
                     </div>
                     <div
                         className="align-horizontal-left">
                         <div
                             className="text-small">
-                            {education.degree}, {education.major}, {education.graduation.toLocaleString(
+                            {experience.company}<br />
+                            {experience.start.toLocaleString(
                                 `default`,
                                 {"month": `long`,},
-                            )} {education.graduation.getFullYear()} <br />
-                            Grade Point Average (GPA): {education.gradePointAverage.toFixed(1,)}
+                            )} {experience.start.getFullYear()} - {experience.end
+                                ? `${experience.end.toLocaleString(
+                                    `default`,
+                                    {"month": `long`,},
+                                )} ${experience.end.getFullYear()}`
+                                : `Present`}
                         </div>
                         <div
                             className="text-small">
-                            Featured Coursework:
+                            Contributions:
                             <ul>
                                 {
-                                    education.featuredCoursework.map((featuredCoursework, featuredCourseworkIndex,) => <li
-                                        key={featuredCourseworkIndex}>
-                                        {featuredCoursework}
+                                    experience.contributions.map((contribution, contributionIndex,) => <li
+                                        key={contributionIndex}>
+                                        {contribution}
                                     </li>,)
                                 }
                             </ul>
                         </div>
                     </div>
                     <div>
-                        <button
-                            className="button-small button-red">
+                        <button>
                             Learn More
                         </button>
                     </div>
                 </div>
                 {
-                    educationIndex === educations.length - 1 &&
+                    experienceIndex === experiences.length - 1 &&
                     <div
                         className={theme === `light`
                             ? `triangle-white-top-right`
@@ -81,4 +85,4 @@ const Educations = () => {
 
 };
 
-export default Educations;
+export default Experience;
