@@ -1,16 +1,24 @@
 import {ThemeContext,} from "../../contexts/Theme";
+import {WindowContext,} from "../../contexts/Window";
 import statistics from "../../information/statistics";
 import {useContext,} from "react";
 
 const Statistics = () => {
 
-    const {theme,} = useContext(ThemeContext,);
+    const {theme,} = useContext(ThemeContext,),
+        {size,} = useContext(WindowContext,);
 
     return <>
         <div
-            className={`row-3 ${theme === `light`
-                ? `background-dark-white`
-                : `background-light-black`}`}>
+            className={`${
+                theme === `light`
+                    ? `background-dark-white`
+                    : `background-light-black`
+            } ${
+                size === `large`
+                    ? `row-3`
+                    : `row`
+            }`}>
             {
                 statistics.map((statistic, statisticIndex,) => <div
                     key={statisticIndex}

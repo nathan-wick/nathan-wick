@@ -1,4 +1,5 @@
 import {ThemeContext,} from "../../contexts/Theme";
+import {WindowContext,} from "../../contexts/Window";
 import person from "../../information/person";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -7,12 +8,17 @@ import {useContext,} from "react";
 
 const Heading = () => {
 
-    const {theme,} = useContext(ThemeContext,);
+    const {theme,} = useContext(ThemeContext,),
+        {size,} = useContext(WindowContext,);
 
     return <div
         className="container">
         <div
-            className="row-2 viewport-height-90">
+            className={`viewport-height-90 ${
+                size === `large`
+                    ? `row-2`
+                    : `row`
+            }`}>
             <div
                 className="column container align-horizontal-center">
                 <div
