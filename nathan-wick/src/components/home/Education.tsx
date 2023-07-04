@@ -1,6 +1,12 @@
 import {ThemeContext,} from "../../contexts/Theme";
 import {WindowContext,} from "../../contexts/Window";
 import educations from "../../information/educations";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import mortarboardDark from "../../icons/mortarboard-dark.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import mortarboardLight from "../../icons/mortarboard-light.svg";
 import {useContext,} from "react";
 
 const Education = () => {
@@ -11,6 +17,11 @@ const Education = () => {
     return <>
         <div
             className="align-horizontal-center">
+            <img
+                className="icon-large"
+                src={theme === `light`
+                    ? mortarboardDark
+                    : mortarboardLight}/>
             <div
                 className="text-large">
                 Education
@@ -43,7 +54,7 @@ const Education = () => {
                                 : education.backgroundImageDark}/>
                 }
                 <div
-                    className={`width-fit-content ${
+                    className={`width-fit-content rounded ${
                         theme === `light`
                             ? `background-white`
                             : `background-black`

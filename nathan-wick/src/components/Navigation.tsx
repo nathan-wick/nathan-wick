@@ -116,7 +116,10 @@ const Navigation = () => {
             <div
                 className="background-blue column-2"
                 style={{
-                    "height": `0.2rem`,
+                    "border": `none`,
+                    "borderBottomRightRadius": `0.2rem`,
+                    "borderTopRightRadius": `0.2rem`,
+                    "height": `0.4rem`,
                     "width": `${scroll > 1 && scroll < 100
                         ? scroll
                         : 0}%`,

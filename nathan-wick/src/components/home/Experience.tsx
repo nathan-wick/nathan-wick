@@ -1,5 +1,11 @@
 import {ThemeContext,} from "../../contexts/Theme";
 import {WindowContext,} from "../../contexts/Window";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import briefcaseDark from "../../icons/briefcase-dark.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import briefcaseLight from "../../icons/briefcase-light.svg";
 import experiences from "../../information/experiences";
 import {useContext,} from "react";
 
@@ -11,6 +17,11 @@ const Experience = () => {
     return <>
         <div
             className="align-horizontal-center">
+            <img
+                className="icon-large"
+                src={theme === `light`
+                    ? briefcaseDark
+                    : briefcaseLight}/>
             <div
                 className="text-large">
                 Experience
@@ -43,7 +54,7 @@ const Experience = () => {
                                 : experience.backgroundImageDark}/>
                 }
                 <div
-                    className={`width-fit-content ${
+                    className={`width-fit-content rounded ${
                         theme === `light`
                             ? `background-white`
                             : `background-black`

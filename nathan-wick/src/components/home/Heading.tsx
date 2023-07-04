@@ -3,7 +3,7 @@ import {WindowContext,} from "../../contexts/Window";
 import person from "../../information/person";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import portrait from "../../images/portrait.png";
+import portrait from "../../images/portrait.webp";
 import {useContext,} from "react";
 
 const Heading = () => {
@@ -42,6 +42,7 @@ const Heading = () => {
                 <div
                     className="width-100">
                     <img
+                        alt={person.name}
                         className="heading-portrait"
                         src={portrait} />
                 </div>

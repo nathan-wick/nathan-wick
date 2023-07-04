@@ -1,6 +1,12 @@
 import {ThemeContext,} from "../../contexts/Theme";
 import skills from "../../information/skills";
 import {useContext,} from "react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import wrenchDark from "../../icons/wrench-dark.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import wrenchLight from "../../icons/wrench-light.svg";
 
 const Skills = () => {
 
@@ -28,6 +34,11 @@ const Skills = () => {
     return <>
         <div
             className="align-horizontal-center">
+            <img
+                className="icon-large"
+                src={theme === `light`
+                    ? wrenchDark
+                    : wrenchLight}/>
             <div
                 className="text-large">
                 Skills
