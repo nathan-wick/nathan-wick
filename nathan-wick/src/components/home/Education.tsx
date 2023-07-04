@@ -1,10 +1,12 @@
 import {ThemeContext,} from "../../contexts/Theme";
+import {WindowContext,} from "../../contexts/Window";
 import educations from "../../information/educations";
 import {useContext,} from "react";
 
 const Education = () => {
 
-    const {theme,} = useContext(ThemeContext,);
+    const {theme,} = useContext(ThemeContext,),
+        {size,} = useContext(WindowContext,);
 
     return <>
         <div
@@ -18,21 +20,40 @@ const Education = () => {
             educations.map((education, educationIndex,) => <div
                 key={educationIndex}
                 className="parallax align-horizontal-center"
-                style={{"backgroundImage": `url(${theme === `light`
-                    ? education.backgroundImageLight
-                    : education.backgroundImageDark})`,}}>
+                style={{"backgroundImage": size === `small`
+                    ? `none`
+                    : `url(${theme === `light`
+                        ? education.backgroundImageLight
+                        : education.backgroundImageDark})`,}}>
                 {
-                    educationIndex === 0 &&
-                    <div
-                        className={theme === `light`
-                            ? `triangle-white-bottom-left`
-                            : `triangle-black-bottom-left`}>
-                    </div>
+                    educationIndex === 0 && size !== `small` &&
+                        <div
+                            className={theme === `light`
+                                ? `triangle-white-bottom-left`
+                                : `triangle-black-bottom-left`}>
+                        </div>
+                }
+                {
+                    size === `small` &&
+                        <img
+                            className="width-100"
+                            alt={education.title}
+                            src={theme === `light`
+                                ? education.backgroundImageLight
+                                : education.backgroundImageDark}/>
                 }
                 <div
-                    className={`width-fit-content max-width-30 padding-1 ${theme === `light`
-                        ? `background-white`
-                        : `background-black`}`}>
+                    className={`width-fit-content ${
+                        theme === `light`
+                            ? `background-white`
+                            : `background-black`
+                    } ${
+                        size === `large`
+                            ? `max-width-30 padding-1`
+                            : size === `medium`
+                                ? `max-width-60 padding-1`
+                                : `width-100`
+                    }`}>
                     <div
                         className="text-medium">
                         {education.title}
@@ -68,12 +89,12 @@ const Education = () => {
                     </div>
                 </div>
                 {
-                    educationIndex === educations.length - 1 &&
-                    <div
-                        className={theme === `light`
-                            ? `triangle-white-top-right`
-                            : `triangle-black-top-right`}>
-                    </div>
+                    educationIndex === educations.length - 1 && size !== `small` &&
+                        <div
+                            className={theme === `light`
+                                ? `triangle-white-top-right`
+                                : `triangle-black-top-right`}>
+                        </div>
                 }
             </div>,)
         }
