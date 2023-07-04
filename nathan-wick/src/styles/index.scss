@@ -19,6 +19,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;

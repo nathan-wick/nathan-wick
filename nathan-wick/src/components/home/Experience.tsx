@@ -1,10 +1,12 @@
 import {ThemeContext,} from "../../contexts/Theme";
+import {WindowContext,} from "../../contexts/Window";
 import experiences from "../../information/experiences";
 import {useContext,} from "react";
 
 const Experience = () => {
 
-    const {theme,} = useContext(ThemeContext,);
+    const {theme,} = useContext(ThemeContext,),
+        {size,} = useContext(WindowContext,);
 
     return <>
         <div
@@ -18,21 +20,40 @@ const Experience = () => {
             experiences.map((experience, experienceIndex,) => <div
                 key={experienceIndex}
                 className="parallax align-horizontal-center"
-                style={{"backgroundImage": `url(${theme === `light`
-                    ? experience.backgroundImageLight
-                    : experience.backgroundImageDark})`,}}>
+                style={{"backgroundImage": size === `small`
+                    ? `none`
+                    : `url(${theme === `light`
+                        ? experience.backgroundImageLight
+                        : experience.backgroundImageDark})`,}}>
                 {
-                    experienceIndex === 0 &&
+                    experienceIndex === 0 && size !== `small` &&
                     <div
                         className={theme === `light`
                             ? `triangle-white-bottom-left`
                             : `triangle-black-bottom-left`}>
                     </div>
                 }
+                {
+                    size === `small` &&
+                        <img
+                            className="width-100"
+                            alt={experience.title}
+                            src={theme === `light`
+                                ? experience.backgroundImageLight
+                                : experience.backgroundImageDark}/>
+                }
                 <div
-                    className={`width-fit-content max-width-30 padding-1 ${theme === `light`
-                        ? `background-white`
-                        : `background-black`}`}>
+                    className={`width-fit-content ${
+                        theme === `light`
+                            ? `background-white`
+                            : `background-black`
+                    } ${
+                        size === `large`
+                            ? `max-width-30 padding-1`
+                            : size === `medium`
+                                ? `max-width-60 padding-1`
+                                : `width-100`
+                    }`}>
                     <div
                         className="text-medium">
                         {experience.title}
@@ -72,12 +93,12 @@ const Experience = () => {
                     </div>
                 </div>
                 {
-                    experienceIndex === experiences.length - 1 &&
-                    <div
-                        className={theme === `light`
-                            ? `triangle-white-top-right`
-                            : `triangle-black-top-right`}>
-                    </div>
+                    experienceIndex === experiences.length - 1 && size !== `small` &&
+                        <div
+                            className={theme === `light`
+                                ? `triangle-white-top-right`
+                                : `triangle-black-top-right`}>
+                        </div>
                 }
             </div>,)
         }
