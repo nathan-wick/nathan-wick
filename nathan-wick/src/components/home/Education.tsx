@@ -1,5 +1,6 @@
 import {ThemeContext,} from "../../contexts/Theme";
 import {WindowContext,} from "../../contexts/Window";
+import dateString from "../../utilities/dateString";
 import educations from "../../information/educations";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -73,10 +74,11 @@ const Education = () => {
                         className="align-horizontal-left">
                         <div
                             className="text-small">
-                            {education.degree}, {education.major}, {education.graduation.toLocaleString(
-                                `default`,
-                                {"month": `long`,},
-                            )} {education.graduation.getFullYear()} <br />
+                            {education.degree}, {education.major}<br />
+                            {dateString(
+                                education.start,
+                                education.end,
+                            )}<br />
                             Grade Point Average (GPA): {education.gradePointAverage.toFixed(1,)}
                         </div>
                         <div

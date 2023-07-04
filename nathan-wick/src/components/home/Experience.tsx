@@ -6,6 +6,7 @@ import briefcaseDark from "../../icons/briefcase-dark.svg";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import briefcaseLight from "../../icons/briefcase-light.svg";
+import dateString from "../../utilities/dateString";
 import experiences from "../../information/experiences";
 import {useContext,} from "react";
 
@@ -74,15 +75,10 @@ const Experience = () => {
                         <div
                             className="text-small">
                             {experience.company}<br />
-                            {experience.start.toLocaleString(
-                                `default`,
-                                {"month": `long`,},
-                            )} {experience.start.getFullYear()} - {experience.end
-                                ? `${experience.end.toLocaleString(
-                                    `default`,
-                                    {"month": `long`,},
-                                )} ${experience.end.getFullYear()}`
-                                : `Present`}
+                            {dateString(
+                                experience.start,
+                                experience.end,
+                            )}
                         </div>
                         <div
                             className="text-small">

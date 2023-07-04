@@ -11,6 +11,7 @@ const educations: Education[] = [
         "backgroundImageDark": universityOfCincinnatiBackgroundImageDark,
         "backgroundImageLight": universityOfCincinnatiBackgroundImageLight,
         "degree": `Bachelor of Science`,
+        "end": new Date(`2024-04-25`,),
         "featuredCoursework": [
             `Database Management 2`,
             `Mobile Device Programming`,
@@ -19,8 +20,8 @@ const educations: Education[] = [
             `Management in Information Technology`,
         ],
         "gradePointAverage": 4,
-        "graduation": new Date(`2024-04-25`,),
         "major": `Software Development`,
+        "start": new Date(`2020-04-26`,),
         "title": `University of Cincinnati`,
     },
 ];
