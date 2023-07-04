@@ -94,7 +94,10 @@ const Experience = () => {
                         </div>
                     </div>
                     <div>
-                        <button>
+                        <button
+                            className={theme === `light`
+                                ? `button-white`
+                                : `button-black`}>
                             Learn More
                         </button>
                     </div>

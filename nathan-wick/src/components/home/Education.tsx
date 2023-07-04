@@ -96,7 +96,9 @@ const Education = () => {
                     </div>
                     <div>
                         <button
-                            className="button-red">
+                            className={theme === `light`
+                                ? `button-white`
+                                : `button-black`}>
                             Learn More
                         </button>
                     </div>
