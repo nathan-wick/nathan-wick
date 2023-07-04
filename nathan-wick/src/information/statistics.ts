@@ -23,7 +23,7 @@ const today = new Date(),
             "value": Math.round(linesOfCodeContributed / 10000,) * 10000,
         },
         {
-            "title": `Completed Software Projects`,
+            "title": `Software Projects Completed`,
             "value": Math.round(completedSoftwareProjects,),
         },
     ];

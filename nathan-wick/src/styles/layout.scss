@@ -7,6 +7,11 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.row-auto-min {
+    display: grid;
+    grid-template-columns: auto min-content;
+}
+
 .row-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14,6 +19,11 @@
 
 .column {
     display: inline-grid;
+}
+
+.column-2 {
+    display: inline-grid;
+    grid-column: span 2;
 }
 
 .container {
