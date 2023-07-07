@@ -26,11 +26,35 @@
     );
 }
 
+.triangle-dark-white-top-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
+        transparent 0%,
+        transparent 50%,
+        colors.$dark-white 50%,
+        colors.$dark-white 100%
+    );
+}
+
 .triangle-dark-white-bottom-right {
     width: 100%;
     height: 8rem;
     background: linear-gradient(
         to bottom left,
+        colors.$dark-white 0%,
+        colors.$dark-white 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
+.triangle-dark-white-bottom-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
         colors.$dark-white 0%,
         colors.$dark-white 50%,
         transparent 50%,
@@ -50,11 +74,35 @@
     );
 }
 
+.triangle-light-black-top-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
+        transparent 0%,
+        transparent 50%,
+        colors.$light-black 50%,
+        colors.$light-black 100%
+    );
+}
+
 .triangle-light-black-bottom-right {
     width: 100%;
     height: 8rem;
     background: linear-gradient(
         to bottom left,
+        colors.$light-black 0%,
+        colors.$light-black 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
+.triangle-light-black-bottom-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom right,
         colors.$light-black 0%,
         colors.$light-black 50%,
         transparent 50%,
@@ -74,11 +122,35 @@
     );
 }
 
+.triangle-white-bottom-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
+        colors.$white 0%,
+        colors.$white 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
 .triangle-white-top-right {
     width: 100%;
     height: 8rem;
     background: linear-gradient(
         to bottom right,
+        transparent 0%,
+        transparent 50%,
+        colors.$white 50%,
+        colors.$white 100%
+    );
+}
+
+.triangle-white-top-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
         transparent 0%,
         transparent 50%,
         colors.$white 50%,
@@ -98,11 +170,35 @@
     );
 }
 
+.triangle-black-bottom-right {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
+        colors.$black 0%,
+        colors.$black 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
 .triangle-black-top-right {
     width: 100%;
     height: 8rem;
     background: linear-gradient(
         to bottom right,
+        transparent 0%,
+        transparent 50%,
+        colors.$black 50%,
+        colors.$black 100%
+    );
+}
+
+.triangle-black-top-left {
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(
+        to bottom left,
         transparent 0%,
         transparent 50%,
         colors.$black 50%,

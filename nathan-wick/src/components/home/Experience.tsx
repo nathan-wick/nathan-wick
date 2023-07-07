@@ -19,6 +19,7 @@ const Experience = () => {
         <div
             className="align-horizontal-center">
             <img
+                alt="Experience"
                 className="icon-large"
                 src={theme === `light`
                     ? briefcaseDark
@@ -41,8 +42,8 @@ const Experience = () => {
                     experienceIndex === 0 && size !== `small` &&
                     <div
                         className={theme === `light`
-                            ? `triangle-white-bottom-left`
-                            : `triangle-black-bottom-left`}>
+                            ? `triangle-white-bottom-right`
+                            : `triangle-black-bottom-right`}>
                     </div>
                 }
                 {
@@ -94,10 +95,7 @@ const Experience = () => {
                         </div>
                     </div>
                     <div>
-                        <button
-                            className={theme === `light`
-                                ? `button-white`
-                                : `button-black`}>
+                        <button>
                             Learn More
                         </button>
                     </div>
@@ -106,8 +104,8 @@ const Experience = () => {
                     experienceIndex === experiences.length - 1 && size !== `small` &&
                         <div
                             className={theme === `light`
-                                ? `triangle-white-top-right`
-                                : `triangle-black-top-right`}>
+                                ? `triangle-white-top-left`
+                                : `triangle-black-top-left`}>
                         </div>
                 }
             </div>,)

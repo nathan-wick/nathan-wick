@@ -19,6 +19,7 @@ const Projects = () => {
         <div
             className="align-horizontal-center">
             <img
+                alt="Projects"
                 className="icon-large"
                 src={theme === `light`
                     ? boxDark
@@ -30,8 +31,8 @@ const Projects = () => {
         </div>
         <div
             className={theme === `light`
-                ? `triangle-dark-white-top-left`
-                : `triangle-light-black-top-left`}>
+                ? `triangle-dark-white-top-right`
+                : `triangle-light-black-top-right`}>
         </div>
         <div
             className={`align-horizontal-center ${
@@ -77,10 +78,7 @@ const Projects = () => {
                                 className="text-small">
                                 {project.description}
                             </div>
-                            <button
-                                className={theme === `light`
-                                    ? `button-white`
-                                    : `button-black`}>
+                            <button>
                             Learn More
                             </button>
                         </div>
@@ -88,16 +86,14 @@ const Projects = () => {
                 }
             </div>
             <button
-                className={theme === `light`
-                    ? `button-white`
-                    : `button-black`}>
-                View All Projects
+                className="margin-top-3">
+                View More Projects
             </button>
         </div>
         <div
             className={theme === `light`
-                ? `triangle-dark-white-bottom-right`
-                : `triangle-light-black-bottom-right`}>
+                ? `triangle-dark-white-bottom-left`
+                : `triangle-light-black-bottom-left`}>
         </div>
     </>;
 

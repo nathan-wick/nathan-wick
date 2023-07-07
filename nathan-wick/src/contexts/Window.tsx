@@ -14,8 +14,14 @@ export const WindowContext = createContext<{
         const getScroll = () => {
 
                 const Scrolled = document.documentElement.scrollTop,
-                    MaxHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight,
-                    ScrollPercent = Scrolled / MaxHeight * 100;
+                    MaxHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                // eslint-disable-next-line no-extra-parens
+                let ScrollPercent = Math.round((Scrolled / MaxHeight * 100) * 100,) / 100;
+                if (ScrollPercent >= 100) {
+
+                    ScrollPercent = 99.99;
+
+                }
                 return ScrollPercent;
 
             },

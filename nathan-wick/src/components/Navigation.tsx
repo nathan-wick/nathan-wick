@@ -22,7 +22,29 @@ const Navigation = () => {
                     setMenuIsOpen(false,);
 
                 }}>
-                About
+                Education
+            </button>
+            <button
+                className={theme === `light`
+                    ? `button-white`
+                    : `button-black`}
+                onClick={() => {
+
+                    setMenuIsOpen(false,);
+
+                }}>
+                Experience
+            </button>
+            <button
+                className={theme === `light`
+                    ? `button-white`
+                    : `button-black`}
+                onClick={() => {
+
+                    setMenuIsOpen(false,);
+
+                }}>
+                Projects
             </button>
             <button
                 className={theme === `light`
@@ -44,7 +66,7 @@ const Navigation = () => {
                     setMenuIsOpen(false,);
 
                 }}>
-                Projects
+                Skills
             </button>
         </div>;
 
@@ -58,7 +80,7 @@ const Navigation = () => {
                 {
                     size !== `large` && menuIsOpen === false &&
                         <div
-                            className={`text-medium ${scroll > 1 && scroll < 100
+                            className={`text-medium ${scroll > 1
                                 ? `show`
                                 : `hide`}`}>
                             {person.name}
@@ -120,7 +142,7 @@ const Navigation = () => {
                     "borderBottomRightRadius": `0.2rem`,
                     "borderTopRightRadius": `0.2rem`,
                     "height": `0.4rem`,
-                    "width": `${scroll > 1 && scroll < 100
+                    "width": `${scroll > 1
                         ? scroll
                         : 0}%`,
                 }} />

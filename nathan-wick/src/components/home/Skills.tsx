@@ -35,6 +35,7 @@ const Skills = () => {
         <div
             className="align-horizontal-center">
             <img
+                alt="Skills"
                 className="icon-large"
                 src={theme === `light`
                     ? wrenchDark

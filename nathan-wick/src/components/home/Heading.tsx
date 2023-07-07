@@ -30,8 +30,7 @@ const Heading = () => {
                     <div
                         className="text-small">
                         {person.title}<br />
-                        <i
-                            className="text-muted">
+                        <i>
                             {person.tagline}
                         </i>
                     </div>

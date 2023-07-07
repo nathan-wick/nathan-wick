@@ -19,6 +19,7 @@ const Education = () => {
         <div
             className="align-horizontal-center">
             <img
+                alt="Education"
                 className="icon-large"
                 src={theme === `light`
                     ? mortarboardDark
@@ -95,10 +96,7 @@ const Education = () => {
                         </div>
                     </div>
                     <div>
-                        <button
-                            className={theme === `light`
-                                ? `button-white`
-                                : `button-black`}>
+                        <button>
                             Learn More
                         </button>
                     </div>
