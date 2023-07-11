@@ -16,6 +16,11 @@ const projects: Project[] = [
         "image": catmapImage,
         "name": `CatMap`,
         "start": new Date(`2023-05-17`,),
+        "version": {
+            "major": 1,
+            "minor": 0,
+            "patch": 0,
+        },
     },
     {
         "description": `This cloud-based tool uses pre-built components to simplify the web development process.`,
@@ -23,6 +28,11 @@ const projects: Project[] = [
         "image": sprostImage,
         "name": `Sprost`,
         "start": new Date(`2022-10-12`,),
+        "version": {
+            "major": 0,
+            "minor": 12,
+            "patch": 4,
+        },
     },
     {
         "description": `This iOS app helps people return or find lost items by enabling users to post found items on a map for others to see.`,
@@ -30,6 +40,11 @@ const projects: Project[] = [
         "image": ifoundItImage,
         "name": `iFound It`,
         "start": new Date(`2022-02-23`,),
+        "version": {
+            "major": 1,
+            "minor": 0,
+            "patch": 0,
+        },
     },
 ];
 

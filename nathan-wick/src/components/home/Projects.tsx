@@ -72,7 +72,8 @@ const Projects = () => {
                                 {dateString(
                                     project.start,
                                     project.end,
-                                )}
+                                )}<br />
+                                Version: {project.version.major}.{project.version.minor}.{project.version.patch}
                             </div>
                             <div
                                 className="text-small">
