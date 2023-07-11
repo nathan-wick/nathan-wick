@@ -1,3 +1,4 @@
+import Articles from "../components/home/Articles";
 import Education from "../components/home/Education";
 import Experience from "../components/home/Experience";
 import Heading from "../components/home/Heading";
@@ -11,6 +12,7 @@ const Home = () => <>
     <Education />
     <Experience />
     <Projects />
+    <Articles />
     <Skills />
 </>;
 

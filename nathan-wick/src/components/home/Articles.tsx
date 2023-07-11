@@ -1,0 +1,101 @@
+import {ThemeContext,} from "../../contexts/Theme";
+import {WindowContext,} from "../../contexts/Window";
+import articles from "../../information/articles";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import boxDark from "../../icons/box-dark.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import boxLight from "../../icons/box-light.svg";
+import {useContext,} from "react";
+
+const Articles = () => {
+
+    const {theme,} = useContext(ThemeContext,),
+        {size,} = useContext(WindowContext,);
+
+    return <>
+        <div
+            className="align-horizontal-center">
+            <img
+                alt="Articles"
+                className="icon-large"
+                src={theme === `light`
+                    ? boxDark
+                    : boxLight}/>
+            <div
+                className="text-large">
+                Articles
+            </div>
+        </div>
+        <div
+            className={theme === `light`
+                ? `triangle-dark-white-top-left`
+                : `triangle-light-black-top-left`}>
+        </div>
+        <div
+            className={`align-horizontal-center ${
+                theme === `light`
+                    ? `background-dark-white`
+                    : `background-light-black`
+            }`}>
+            <div
+                className={`${
+                    size === `large`
+                        ? `row-3`
+                        : `row`
+                }`}>
+                {
+                    articles.slice(
+                        0,
+                        3,
+                    ).map((article, articleIndex,) => <div
+                        key={articleIndex}
+                        className="column padding-1">
+                        <div
+                            className={`rounded ${
+                                theme === `light`
+                                    ? `background-white`
+                                    : `background-black`
+                            }`}>
+                            <img
+                                className="width-100 rounded"
+                                src={article.image}
+                                alt={article.name} />
+                            <div
+                                className="text-medium">
+                                {article.name}
+                            </div>
+                            <div
+                                className="text-small">
+                                {article.date.toLocaleString(
+                                    `default`,
+                                    {"month": `long`,},
+                                )} {article.date.getFullYear()}
+                            </div>
+                            <div
+                                className="text-small">
+                                {article.description}
+                            </div>
+                            <button>
+                            Learn More
+                            </button>
+                        </div>
+                    </div>,)
+                }
+            </div>
+            <button
+                className="margin-top-3">
+                View More Articles
+            </button>
+        </div>
+        <div
+            className={theme === `light`
+                ? `triangle-dark-white-bottom-right`
+                : `triangle-light-black-bottom-right`}>
+        </div>
+    </>;
+
+};
+
+export default Articles;
