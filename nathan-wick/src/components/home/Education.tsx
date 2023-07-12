@@ -31,91 +31,102 @@ const Education = () => {
         </div>
         {
             educations.map((education, educationIndex,) => <div
-                key={educationIndex}
-                className={`parallax align-horizontal-center ${
-                    theme === `light`
-                        ? `background-dark-white`
-                        : `background-light-black`
-                }`}
-                style={{"backgroundImage": size === `small`
-                    ? `none`
-                    : `url(${theme === `light`
-                        ? education.backgroundImageLight
-                        : education.backgroundImageDark})`,}}>
-                {
-                    educationIndex === 0 &&
-                        <div
-                            className={theme === `light`
-                                ? `triangle-white-bottom-left`
-                                : `triangle-black-bottom-left`}>
-                        </div>
-                }
+                key={educationIndex}>
+                <style>
+                    {
+                        `.education-${educationIndex}:before {
+                            background-image: ${size === `small`
+        ? `none`
+        : `url(${theme === `light`
+            ? education.backgroundImageLight
+            : education.backgroundImageDark})`};
+                        }`
+                    }
+                </style>
                 <div
-                    className="padding-1">
+                    className={`background-parallax-blur education-${educationIndex} align-horizontal-center ${
+                        theme === `light`
+                            ? `background-dark-white`
+                            : `background-light-black`
+                    }`}>
                     <div
-                        className={`width-fit-content rounded ${
-                            theme === `light`
-                                ? `background-white`
-                                : `background-black`
-                        } ${
-                            size === `large`
-                                ? `max-width-30 padding-1`
-                                : size === `medium`
-                                    ? `max-width-60 padding-1`
-                                    : `width-100`
-                        }`}>
+                        className="position-relative">
                         {
-                            size === `small` &&
-                                <img
-                                    className="width-100 rounded"
-                                    src={theme === `light`
-                                        ? education.backgroundImageLight
-                                        : education.backgroundImageDark}
-                                    alt={education.title} />
+                            educationIndex === 0 &&
+                            <div
+                                className={theme === `light`
+                                    ? `triangle-white-bottom-left`
+                                    : `triangle-black-bottom-left`}>
+                            </div>
                         }
                         <div
-                            className="text-medium">
-                            {education.title}
-                        </div>
-                        <div
-                            className="text-small">
-                            {education.degree}, {education.major}<br />
-                            {dateString(
-                                education.start,
-                                education.end,
-                            )}<br />
-                            Grade Point Average (GPA): {education.gradePointAverage.toFixed(1,)}
-                        </div>
-                        <div
-                            className="align-horizontal-left">
+                            className="padding-1">
                             <div
-                                className="text-small">
-                                Featured Coursework:
-                                <ul>
-                                    {
-                                        education.featuredCoursework.map((featuredCoursework, featuredCourseworkIndex,) => <li
-                                            key={featuredCourseworkIndex}>
-                                            {featuredCoursework}
-                                        </li>,)
-                                    }
-                                </ul>
+                                className={`width-fit-content rounded ${
+                                    theme === `light`
+                                        ? `background-white`
+                                        : `background-black`
+                                } ${
+                                    size === `large`
+                                        ? `max-width-30 padding-1`
+                                        : size === `medium`
+                                            ? `max-width-60 padding-1`
+                                            : `width-100`
+                                }`}>
+                                {
+                                    size === `small` &&
+                                    <img
+                                        className="width-100 rounded"
+                                        src={theme === `light`
+                                            ? education.backgroundImageLight
+                                            : education.backgroundImageDark}
+                                        alt={education.title} />
+                                }
+                                <div
+                                    className="text-medium">
+                                    {education.title}
+                                </div>
+                                <div
+                                    className="text-small">
+                                    {education.degree}, {education.major}<br />
+                                    {dateString(
+                                        education.start,
+                                        education.end,
+                                    )}<br />
+                                    Grade Point Average (GPA): {education.gradePointAverage.toFixed(1,)}
+                                </div>
+                                <div
+                                    className="align-horizontal-left">
+                                    <div
+                                        className="text-small">
+                                        Featured Coursework:
+                                        <ul>
+                                            {
+                                                education.featuredCoursework.map((featuredCoursework, featuredCourseworkIndex,) => <li
+                                                    key={featuredCourseworkIndex}>
+                                                    {featuredCoursework}
+                                                </li>,)
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button>
+                                        Learn More
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <button>
-                                Learn More
-                            </button>
-                        </div>
+                        {
+                            educationIndex === educations.length - 1 &&
+                            <div
+                                className={theme === `light`
+                                    ? `triangle-white-top-right`
+                                    : `triangle-black-top-right`}>
+                            </div>
+                        }
                     </div>
                 </div>
-                {
-                    educationIndex === educations.length - 1 &&
-                        <div
-                            className={theme === `light`
-                                ? `triangle-white-top-right`
-                                : `triangle-black-top-right`}>
-                        </div>
-                }
             </div>,)
         }
     </>;

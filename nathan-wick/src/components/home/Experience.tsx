@@ -31,90 +31,101 @@ const Experience = () => {
         </div>
         {
             experiences.map((experience, experienceIndex,) => <div
-                key={experienceIndex}
-                className={`parallax align-horizontal-center ${
-                    theme === `light`
-                        ? `background-dark-white`
-                        : `background-light-black`
-                }`}
-                style={{"backgroundImage": size === `small`
-                    ? `none`
-                    : `url(${theme === `light`
-                        ? experience.backgroundImageLight
-                        : experience.backgroundImageDark})`,}}>
-                {
-                    experienceIndex === 0 &&
-                    <div
-                        className={theme === `light`
-                            ? `triangle-white-bottom-right`
-                            : `triangle-black-bottom-right`}>
-                    </div>
-                }
+                key={experienceIndex}>
+                <style>
+                    {
+                        `.experience-${experienceIndex}:before {
+                            background-image: ${size === `small`
+        ? `none`
+        : `url(${theme === `light`
+            ? experience.backgroundImageLight
+            : experience.backgroundImageDark})`};
+                        }`
+                    }
+                </style>
                 <div
-                    className="padding-1">
+                    className={`background-parallax-blur experience-${experienceIndex} align-horizontal-center ${
+                        theme === `light`
+                            ? `background-dark-white`
+                            : `background-light-black`
+                    }`}>
                     <div
-                        className={`width-fit-content rounded ${
-                            theme === `light`
-                                ? `background-white`
-                                : `background-black`
-                        } ${
-                            size === `large`
-                                ? `max-width-30 padding-1`
-                                : size === `medium`
-                                    ? `max-width-60 padding-1`
-                                    : `width-100`
-                        }`}>
+                        className="position-relative">
                         {
-                            size === `small` &&
-                                <img
-                                    className="width-100 rounded"
-                                    src={theme === `light`
-                                        ? experience.backgroundImageLight
-                                        : experience.backgroundImageDark}
-                                    alt={experience.title} />
+                            experienceIndex === 0 &&
+                            <div
+                                className={theme === `light`
+                                    ? `triangle-white-bottom-right`
+                                    : `triangle-black-bottom-right`}>
+                            </div>
                         }
                         <div
-                            className="text-medium">
-                            {experience.title}
-                        </div>
-                        <div
-                            className="text-small">
-                            {experience.company}<br />
-                            {dateString(
-                                experience.start,
-                                experience.end,
-                            )}
-                        </div>
-                        <div
-                            className="align-horizontal-left">
+                            className="padding-1">
                             <div
-                                className="text-small">
-                                Contributions:
-                                <ul>
-                                    {
-                                        experience.contributions.map((contribution, contributionIndex,) => <li
-                                            key={contributionIndex}>
-                                            {contribution}
-                                        </li>,)
-                                    }
-                                </ul>
+                                className={`width-fit-content rounded ${
+                                    theme === `light`
+                                        ? `background-white`
+                                        : `background-black`
+                                } ${
+                                    size === `large`
+                                        ? `max-width-30 padding-1`
+                                        : size === `medium`
+                                            ? `max-width-60 padding-1`
+                                            : `width-100`
+                                }`}>
+                                {
+                                    size === `small` &&
+                                        <img
+                                            className="width-100 rounded"
+                                            src={theme === `light`
+                                                ? experience.backgroundImageLight
+                                                : experience.backgroundImageDark}
+                                            alt={experience.title} />
+                                }
+                                <div
+                                    className="text-medium">
+                                    {experience.title}
+                                </div>
+                                <div
+                                    className="text-small">
+                                    {experience.company}<br />
+                                    {dateString(
+                                        experience.start,
+                                        experience.end,
+                                    )}
+                                </div>
+                                <div
+                                    className="align-horizontal-left">
+                                    <div
+                                        className="text-small">
+                                        Contributions:
+                                        <ul>
+                                            {
+                                                experience.contributions.map((contribution, contributionIndex,) => <li
+                                                    key={contributionIndex}>
+                                                    {contribution}
+                                                </li>,)
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button>
+                                        Learn More
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <button>
-                                Learn More
-                            </button>
-                        </div>
+                        {
+                            experienceIndex === experiences.length - 1 &&
+                                <div
+                                    className={theme === `light`
+                                        ? `triangle-white-top-left`
+                                        : `triangle-black-top-left`}>
+                                </div>
+                        }
                     </div>
                 </div>
-                {
-                    experienceIndex === experiences.length - 1 &&
-                        <div
-                            className={theme === `light`
-                                ? `triangle-white-top-left`
-                                : `triangle-black-top-left`}>
-                        </div>
-                }
             </div>,)
         }
     </>;
