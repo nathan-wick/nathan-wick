@@ -6,7 +6,6 @@ import boxDark from "../../icons/box-dark.svg";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import boxLight from "../../icons/box-light.svg";
-import dateString from "../../utilities/dateString";
 import projects from "../../information/projects";
 import {useContext,} from "react";
 
@@ -69,14 +68,6 @@ const Projects = () => {
                             </div>
                             <div
                                 className="text-small">
-                                {dateString(
-                                    project.start,
-                                    project.end,
-                                )}<br />
-                                Version: {project.version.major}.{project.version.minor}.{project.version.patch}
-                            </div>
-                            <div
-                                className="text-small">
                                 {project.description}
                             </div>
                             <button>
@@ -87,7 +78,9 @@ const Projects = () => {
                 }
             </div>
             <button
-                className="margin-top-3">
+                className={`margin-top-3 ${theme === `light`
+                    ? `button-white`
+                    : `button-black`}`}>
                 View More Projects
             </button>
         </div>

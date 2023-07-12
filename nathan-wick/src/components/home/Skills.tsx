@@ -47,8 +47,8 @@ const Skills = () => {
         </div>
         <div
             className={theme === `light`
-                ? `triangle-dark-white-top-left`
-                : `triangle-light-black-top-left`}>
+                ? `triangle-dark-white-top-right`
+                : `triangle-light-black-top-right`}>
         </div>
         <div
             className={`align-horizontal-center text-black ${theme === `light`
@@ -64,8 +64,8 @@ const Skills = () => {
         </div>
         <div
             className={theme === `light`
-                ? `triangle-dark-white-bottom-right`
-                : `triangle-light-black-bottom-right`}>
+                ? `triangle-dark-white-bottom-left`
+                : `triangle-light-black-bottom-left`}>
         </div>
     </>;
 

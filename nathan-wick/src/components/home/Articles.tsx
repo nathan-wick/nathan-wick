@@ -1,12 +1,12 @@
 import {ThemeContext,} from "../../contexts/Theme";
 import {WindowContext,} from "../../contexts/Window";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import articleDark from "../../icons/article-dark.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import articleLight from "../../icons/article-light.svg";
 import articles from "../../information/articles";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import boxDark from "../../icons/box-dark.svg";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import boxLight from "../../icons/box-light.svg";
 import {useContext,} from "react";
 
 const Articles = () => {
@@ -21,8 +21,8 @@ const Articles = () => {
                 alt="Articles"
                 className="icon-large"
                 src={theme === `light`
-                    ? boxDark
-                    : boxLight}/>
+                    ? articleDark
+                    : articleLight}/>
             <div
                 className="text-large">
                 Articles
@@ -68,13 +68,6 @@ const Articles = () => {
                             </div>
                             <div
                                 className="text-small">
-                                {article.date.toLocaleString(
-                                    `default`,
-                                    {"month": `long`,},
-                                )} {article.date.getFullYear()}
-                            </div>
-                            <div
-                                className="text-small">
                                 {article.description}
                             </div>
                             <button>
@@ -85,7 +78,9 @@ const Articles = () => {
                 }
             </div>
             <button
-                className="margin-top-3">
+                className={`margin-top-3 ${theme === `light`
+                    ? `button-white`
+                    : `button-black`}`}>
                 View More Articles
             </button>
         </div>
