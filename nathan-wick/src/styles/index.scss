@@ -17,6 +17,8 @@ body {
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 html, body {
@@ -25,6 +27,4 @@ html, body {
 
 body::-webkit-scrollbar {
     display: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }

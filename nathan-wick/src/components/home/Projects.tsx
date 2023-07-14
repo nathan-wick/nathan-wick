@@ -68,10 +68,17 @@ const Projects = () => {
                             </div>
                             <div
                                 className="text-small">
-                                {project.description}
+                                {project.summary}
                             </div>
-                            <button>
-                            Learn More
+                            <button
+                                onClick={() => window.open(
+                                    `/projects/${project.name.toLowerCase().replace(
+                                        / /gu,
+                                        `-`,
+                                    )}`,
+                                    `_blank`,
+                                )}>
+                                Learn More
                             </button>
                         </div>
                     </div>,)

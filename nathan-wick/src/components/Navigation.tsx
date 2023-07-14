@@ -7,12 +7,12 @@ const Navigation = () => {
 
     const {setTheme, theme,} = useContext(ThemeContext,),
         {scroll, size,} = useContext(WindowContext,),
+        {pathname,} = location,
         [
             menuIsOpen,
             setMenuIsOpen,
         ] = useState(false,),
-        NavigationButtons = () => <div
-            className="align-horizontal-left">
+        NavigationButtons = () => <>
             <button
                 className={theme === `light`
                     ? `button-white`
@@ -68,7 +68,7 @@ const Navigation = () => {
                 }}>
                 Skills
             </button>
-        </div>;
+        </>;
 
     return <>
         <div
@@ -86,10 +86,30 @@ const Navigation = () => {
                             {person.name}
                         </div>
                 }
-                {
-                    (size === `large` || menuIsOpen === true) &&
-                        <NavigationButtons />
-                }
+                <div
+                    className="align-horizontal-left">
+                    {
+                        size === `large` || menuIsOpen === true
+                            ? pathname === `/`
+                                ? <NavigationButtons />
+                                : <button
+                                    className={theme === `light`
+                                        ? `button-white`
+                                        : `button-black`}
+                                    onClick={() => {
+
+                                        setMenuIsOpen(false,);
+                                        window.open(
+                                            `/`,
+                                            `_self`,
+                                        );
+
+                                    }}>
+                                    Home
+                                </button>
+                            : <></>
+                    }
+                </div>
             </div>
             <div
                 className="column">

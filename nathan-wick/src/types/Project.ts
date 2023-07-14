@@ -2,11 +2,13 @@ import {Version,} from "./Version";
 
 export declare interface Project {
     name: string,
-    description: string,
+    summary: string,
     version: Version,
     image: string,
     start: Date,
     end?: Date,
-    body?: JSX.Element,
+    domain?: string,
+    repository?: string,
+    description?: string[],
     relatedSkills?: string[],
 }
