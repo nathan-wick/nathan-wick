@@ -98,7 +98,7 @@ const Navigation = () => {
                 {
                     size !== `large` && menuIsOpen === false &&
                         <div
-                            className={`text-medium ${scroll > 1
+                            className={`text-navigation ${scroll > 1
                                 ? `show`
                                 : `hide`}`}>
                             {person.name}
@@ -114,7 +114,7 @@ const Navigation = () => {
                                     {
                                         size === `large`
                                             ? <div
-                                                className="text-medium">
+                                                className="text-navigation">
                                                 {person.name}
                                             </div>
                                             : <HomeButton />
