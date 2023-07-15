@@ -6,6 +6,5 @@ export declare interface Education {
     end?: Date,
     gradePointAverage: number,
     featuredCoursework: string[],
-    backgroundImageLight: string,
-    backgroundImageDark: string,
+    image: string,
 }

@@ -2,6 +2,7 @@ import './styles/index.scss';
 import {RouterProvider, createBrowserRouter,} from 'react-router-dom';
 import Home from './views/Home';
 import Navigation from './components/Navigation';
+import PageNotFound from './components/PageNotFound';
 import Project from './views/Project';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -12,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById(`root`,) as HTMLElement
     router = createBrowserRouter([
         {
             "element": <Home />,
-            "errorElement": <Home />,
+            "errorElement": <PageNotFound />,
             "path": `/`,
         },
         {

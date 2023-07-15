@@ -1,8 +1,9 @@
 import React, {useContext,} from "react";
-import Home from "./Home";
+import PageNotFound from "../components/PageNotFound";
 import {ThemeContext,} from "../contexts/Theme";
 import {WindowContext,} from "../contexts/Window";
 import dateString from "../utilities/dateString";
+import person from "../information/person";
 import projects from "../information/projects";
 import {useParams,} from "react-router-dom";
 
@@ -115,9 +116,28 @@ const Project = () => {
                                 }
                             </>
                         }
+                        {
+                            project.contributions?.length && <>
+                                <div
+                                    className="text-medium">
+                                    {person.name}'s Contributions
+                                </div>
+                                <div
+                                    className="text-small">
+                                    <ul>
+                                        {
+                                            project.contributions.map((contribution, contributionIndex,) => <li
+                                                key={contributionIndex}>
+                                                {contribution}
+                                            </li>,)
+                                        }
+                                    </ul>
+                                </div>
+                            </>
+                        }
                     </div>
                 </>
-                : <Home />
+                : <PageNotFound />
         }
     </>;
 

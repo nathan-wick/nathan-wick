@@ -17,6 +17,7 @@ const Education = () => {
 
     return <>
         <div
+            id="education"
             className="align-horizontal-center">
             <img
                 alt="Education"
@@ -37,9 +38,7 @@ const Education = () => {
                         `.education-${educationIndex}:before {
                             background-image: ${size === `small`
         ? `none`
-        : `url(${theme === `light`
-            ? education.backgroundImageLight
-            : education.backgroundImageDark})`};
+        : `url(${education.image})`};
                         }`
                     }
                 </style>
@@ -77,9 +76,7 @@ const Education = () => {
                                     size === `small` &&
                                     <img
                                         className="width-100 rounded"
-                                        src={theme === `light`
-                                            ? education.backgroundImageLight
-                                            : education.backgroundImageDark}
+                                        src={education.image}
                                         alt={education.title} />
                                 }
                                 <div

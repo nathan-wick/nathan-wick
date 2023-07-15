@@ -17,6 +17,7 @@ const Experience = () => {
 
     return <>
         <div
+            id="experience"
             className="align-horizontal-center">
             <img
                 alt="Experience"
@@ -37,9 +38,7 @@ const Experience = () => {
                         `.experience-${experienceIndex}:before {
                             background-image: ${size === `small`
         ? `none`
-        : `url(${theme === `light`
-            ? experience.backgroundImageLight
-            : experience.backgroundImageDark})`};
+        : `url(${experience.image})`};
                         }`
                     }
                 </style>
@@ -77,9 +76,7 @@ const Experience = () => {
                                     size === `small` &&
                                         <img
                                             className="width-100 rounded"
-                                            src={theme === `light`
-                                                ? experience.backgroundImageLight
-                                                : experience.backgroundImageDark}
+                                            src={experience.image}
                                             alt={experience.title} />
                                 }
                                 <div

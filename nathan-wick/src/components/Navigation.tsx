@@ -20,6 +20,7 @@ const Navigation = () => {
                 onClick={() => {
 
                     setMenuIsOpen(false,);
+                    window.location.href = `#education`;
 
                 }}>
                 Education
@@ -31,6 +32,7 @@ const Navigation = () => {
                 onClick={() => {
 
                     setMenuIsOpen(false,);
+                    window.location.href = `#experience`;
 
                 }}>
                 Experience
@@ -42,6 +44,7 @@ const Navigation = () => {
                 onClick={() => {
 
                     setMenuIsOpen(false,);
+                    window.location.href = `#projects`;
 
                 }}>
                 Projects
@@ -53,6 +56,7 @@ const Navigation = () => {
                 onClick={() => {
 
                     setMenuIsOpen(false,);
+                    window.location.href = `#articles`;
 
                 }}>
                 Articles
@@ -64,11 +68,25 @@ const Navigation = () => {
                 onClick={() => {
 
                     setMenuIsOpen(false,);
+                    window.location.href = `#skills`;
 
                 }}>
                 Skills
             </button>
-        </>;
+        </>,
+        HomeButton = () => <button
+            className="button-green"
+            onClick={() => {
+
+                setMenuIsOpen(false,);
+                window.open(
+                    `/`,
+                    `_self`,
+                );
+
+            }}>
+            Home
+        </button>;
 
     return <>
         <div
@@ -92,21 +110,16 @@ const Navigation = () => {
                         size === `large` || menuIsOpen === true
                             ? pathname === `/`
                                 ? <NavigationButtons />
-                                : <button
-                                    className={theme === `light`
-                                        ? `button-white`
-                                        : `button-black`}
-                                    onClick={() => {
-
-                                        setMenuIsOpen(false,);
-                                        window.open(
-                                            `/`,
-                                            `_self`,
-                                        );
-
-                                    }}>
-                                    Home
-                                </button>
+                                : <>
+                                    {
+                                        size === `large`
+                                            ? <div
+                                                className="text-medium">
+                                                {person.name}
+                                            </div>
+                                            : <HomeButton />
+                                    }
+                                </>
                             : <></>
                     }
                 </div>
@@ -124,6 +137,10 @@ const Navigation = () => {
                     }
                     {
                         (size === `large` || menuIsOpen === true) && <>
+                            {
+                                pathname !== `/` && size === `large` &&
+                                    <HomeButton />
+                            }
                             <button
                                 onClick={() => setMenuIsOpen(false,)}>
                                 Contact

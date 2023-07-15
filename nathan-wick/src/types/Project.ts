@@ -10,5 +10,6 @@ export declare interface Project {
     domain?: string,
     repository?: string,
     description?: string[],
+    contributions?: string[],
     relatedSkills?: string[],
 }

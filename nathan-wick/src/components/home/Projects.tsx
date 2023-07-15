@@ -16,6 +16,7 @@ const Projects = () => {
 
     return <>
         <div
+            id="projects"
             className="align-horizontal-center">
             <img
                 alt="Projects"
@@ -76,7 +77,7 @@ const Projects = () => {
                                         / /gu,
                                         `-`,
                                     )}`,
-                                    `_blank`,
+                                    `_self`,
                                 )}>
                                 Learn More
                             </button>

@@ -4,6 +4,5 @@ export declare interface Experience {
     start: Date,
     end?: Date,
     contributions: string[],
-    backgroundImageLight: string,
-    backgroundImageDark: string,
+    image: string,
 }

@@ -33,6 +33,7 @@ const Skills = () => {
 
     return <>
         <div
+            id="skills"
             className="align-horizontal-center">
             <img
                 alt="Skills"

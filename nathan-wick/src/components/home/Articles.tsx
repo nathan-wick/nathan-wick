@@ -16,6 +16,7 @@ const Articles = () => {
 
     return <>
         <div
+            id="articles"
             className="align-horizontal-center">
             <img
                 alt="Articles"
