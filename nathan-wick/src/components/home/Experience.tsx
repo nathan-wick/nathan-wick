@@ -93,9 +93,16 @@ const Experience = () => {
                                 </div>
                                 <div
                                     className="align-horizontal-left">
+                                    {
+                                        experience.description.map((description, descriptionIndex,) => <div
+                                            key={descriptionIndex}
+                                            className="text-small">
+                                            {description}
+                                        </div>,)
+                                    }
                                     <div
                                         className="text-small">
-                                        Contributions:
+                                        Featured Contributions:
                                         <ul>
                                             {
                                                 experience.contributions.map((contribution, contributionIndex,) => <li
@@ -105,11 +112,6 @@ const Experience = () => {
                                             }
                                         </ul>
                                     </div>
-                                </div>
-                                <div>
-                                    <button>
-                                        Learn More
-                                    </button>
                                 </div>
                             </div>
                         </div>

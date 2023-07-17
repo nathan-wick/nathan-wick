@@ -98,9 +98,14 @@ const Navigation = () => {
                 {
                     size !== `large` && menuIsOpen === false &&
                         <div
-                            className={`text-navigation ${scroll > 1
+                            className={`text-navigation ${scroll > 1 || pathname !== `/`
                                 ? `show`
-                                : `hide`}`}>
+                                : `hide`}`}
+                            onClick={() => {
+
+                                window.location.href = `/`;
+
+                            }}>
                             {person.name}
                         </div>
                 }
@@ -114,7 +119,12 @@ const Navigation = () => {
                                     {
                                         size === `large`
                                             ? <div
-                                                className="text-navigation">
+                                                className="text-navigation"
+                                                onClick={() => {
+
+                                                    window.location.href = `/`;
+
+                                                }}>
                                                 {person.name}
                                             </div>
                                             : <HomeButton />
@@ -185,7 +195,7 @@ const Navigation = () => {
                 }} />
         </div>
         <div
-            className="padding-top-5">
+            className="padding-top-3">
         </div>
     </>;
 

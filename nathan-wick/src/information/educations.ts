@@ -6,6 +6,7 @@ import universityOfCincinnatiImage from "../images/university-of-cincinnati.webp
 const educations: Education[] = [
     {
         "degree": `Bachelor of Science`,
+        "description": [`The University of Cincinnati (UC) is the overall best college in Ohio (according to the Niche report, 2022). UC also has a highly-ranked and accredited Software Development program, dedicated to shaping the newest Software Development professionals.`,],
         "end": new Date(`2024-04-25`,),
         "featuredCoursework": [
             `Database Management 2`,

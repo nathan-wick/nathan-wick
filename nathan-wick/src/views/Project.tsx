@@ -34,12 +34,7 @@ const Project = () => {
                         <div
                             className="position-relative">
                             <div
-                                className={theme === `light`
-                                    ? `triangle-white-bottom-right`
-                                    : `triangle-black-bottom-right`}>
-                            </div>
-                            <div
-                                className="padding-1">
+                                className="padding-1 padding-top-5">
                                 <div
                                     className={`width-fit-content padding-1 rounded ${theme === `light`
                                         ? `background-white`

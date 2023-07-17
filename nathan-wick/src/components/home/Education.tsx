@@ -94,6 +94,13 @@ const Education = () => {
                                 </div>
                                 <div
                                     className="align-horizontal-left">
+                                    {
+                                        education.description.map((description, descriptionIndex,) => <div
+                                            key={descriptionIndex}
+                                            className="text-small">
+                                            {description}
+                                        </div>,)
+                                    }
                                     <div
                                         className="text-small">
                                         Featured Coursework:
@@ -106,11 +113,6 @@ const Education = () => {
                                             }
                                         </ul>
                                     </div>
-                                </div>
-                                <div>
-                                    <button>
-                                        Learn More
-                                    </button>
                                 </div>
                             </div>
                         </div>

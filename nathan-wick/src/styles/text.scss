@@ -1,13 +1,9 @@
 @use 'colors' as colors;
 
-li {
-    padding: 0.2rem;
-}
-
 .text-navigation {
     font-size: 1rem;
     font-weight: bold;
-    padding: 0.8rem;
+    padding: 0.6rem;
     transition: 1.2s;
 }
 
@@ -19,16 +15,15 @@ li {
 }
 
 .text-medium {
-    display: inline-block;
     font-size: 2rem;
     font-weight: bold;
-    padding: 0.6rem;
+    padding: 0.8rem;
     transition: 0.8s;
 }
 
 .text-small {
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0.6rem;
     transition: 1.2s;
 }
 
@@ -38,4 +33,8 @@ li {
 
 .text-muted {
     color: colors.$gray;
+}
+
+.text-indent {
+    text-indent: 2rem;
 }
