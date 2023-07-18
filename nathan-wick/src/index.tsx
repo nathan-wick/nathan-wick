@@ -1,5 +1,6 @@
 import './styles/index.scss';
 import {RouterProvider, createBrowserRouter,} from 'react-router-dom';
+import Article from './views/Article';
 import Home from './views/Home';
 import Navigation from './components/Navigation';
 import PageNotFound from './components/PageNotFound';
@@ -21,7 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById(`root`,) as HTMLElement
             "path": `projects/:projectId`,
         },
         {
-            "element": <Home />,
+            "element": <Article />,
             "path": `articles/:articleId`,
         },
     ],);

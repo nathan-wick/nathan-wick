@@ -151,10 +151,13 @@ const Navigation = () => {
                                 pathname !== `/` && size === `large` &&
                                     <HomeButton />
                             }
-                            <button
-                                onClick={() => setMenuIsOpen(false,)}>
-                                Contact
-                            </button>
+                            {
+                                pathname === `/` &&
+                                    <button
+                                        onClick={() => setMenuIsOpen(false,)}>
+                                        Contact
+                                    </button>
+                            }
                             {
                                 theme === `light`
                                     ? <button

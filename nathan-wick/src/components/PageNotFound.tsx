@@ -12,7 +12,7 @@ const PageNotFound = () => {
         </div>
         <div
             className="text-small">
-            The page you're trying to access ({pathname}) does not exist.
+            {pathname} does not exist.
         </div>
         <button
             onClick={() => window.open(

@@ -40,7 +40,7 @@ const Project = () => {
                                         ? `background-white`
                                         : `background-black`}`}>
                                     <div
-                                        className="text-large">
+                                        className="text-medium">
                                         {project.name}
                                     </div>
                                     <div
@@ -93,7 +93,7 @@ const Project = () => {
                             Summary
                         </div>
                         <div
-                            className="text-small">
+                            className="text-small text-indent">
                             {project.summary}
                         </div>
                         {
@@ -105,7 +105,7 @@ const Project = () => {
                                 {
                                     project.description.map((description, descriptionIndex,) => <div
                                         key={descriptionIndex}
-                                        className="text-small">
+                                        className="text-small text-indent">
                                         {description}
                                     </div>,)
                                 }

@@ -71,8 +71,15 @@ const Articles = () => {
                                 className="text-small">
                                 {article.description}
                             </div>
-                            <button>
-                            Learn More
+                            <button
+                                onClick={() => window.open(
+                                    `/articles/${article.name.toLowerCase().replace(
+                                        / /gu,
+                                        `-`,
+                                    )}`,
+                                    `_self`,
+                                )}>
+                                Learn More
                             </button>
                         </div>
                     </div>,)

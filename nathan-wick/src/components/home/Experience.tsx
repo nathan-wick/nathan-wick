@@ -96,7 +96,7 @@ const Experience = () => {
                                     {
                                         experience.description.map((description, descriptionIndex,) => <div
                                             key={descriptionIndex}
-                                            className="text-small">
+                                            className="text-small text-indent">
                                             {description}
                                         </div>,)
                                     }
