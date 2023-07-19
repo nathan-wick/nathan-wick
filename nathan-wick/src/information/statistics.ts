@@ -9,9 +9,9 @@ const today = new Date(),
         today,
     ),
     programmingHours = averageHoursProgrammingPerDay * daysSinceFirstDayProgramming,
-    averageLinesOfCodePerHour = 25,
+    averageLinesOfCodePerHour = 75,
     linesOfCodeContributed = programmingHours * averageLinesOfCodePerHour,
-    averageLinesOfCodePerProject = 12000,
+    averageLinesOfCodePerProject = 40000,
     completedSoftwareProjects = linesOfCodeContributed / averageLinesOfCodePerProject,
     statistics: Statistic[] = [
         {

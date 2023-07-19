@@ -94,13 +94,6 @@ const Education = () => {
                                 </div>
                                 <div
                                     className="align-horizontal-left">
-                                    {
-                                        education.description.map((description, descriptionIndex,) => <div
-                                            key={descriptionIndex}
-                                            className="text-small text-indent">
-                                            {description}
-                                        </div>,)
-                                    }
                                     <div
                                         className="text-small">
                                         Featured Coursework:

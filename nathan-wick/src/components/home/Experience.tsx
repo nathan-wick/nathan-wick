@@ -93,13 +93,6 @@ const Experience = () => {
                                 </div>
                                 <div
                                     className="align-horizontal-left">
-                                    {
-                                        experience.description.map((description, descriptionIndex,) => <div
-                                            key={descriptionIndex}
-                                            className="text-small text-indent">
-                                            {description}
-                                        </div>,)
-                                    }
                                     <div
                                         className="text-small">
                                         Featured Contributions:
