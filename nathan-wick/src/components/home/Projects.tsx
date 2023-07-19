@@ -1,3 +1,4 @@
+import {useContext, useState,} from "react";
 import {ThemeContext,} from "../../contexts/Theme";
 import {WindowContext,} from "../../contexts/Window";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -7,12 +8,15 @@ import boxDark from "../../icons/box-dark.svg";
 // @ts-ignore
 import boxLight from "../../icons/box-light.svg";
 import projects from "../../information/projects";
-import {useContext,} from "react";
 
 const Projects = () => {
 
     const {theme,} = useContext(ThemeContext,),
-        {size,} = useContext(WindowContext,);
+        {size,} = useContext(WindowContext,),
+        [
+            projectsDisplayed,
+            setProjectsDisplayed,
+        ] = useState(3,);
 
     return <>
         <div
@@ -49,7 +53,7 @@ const Projects = () => {
                 {
                     projects.slice(
                         0,
-                        3,
+                        projectsDisplayed,
                     ).map((project, projectIndex,) => <div
                         key={projectIndex}
                         className="column padding-1">
@@ -85,12 +89,16 @@ const Projects = () => {
                     </div>,)
                 }
             </div>
-            <button
-                className={`margin-top-3 ${theme === `light`
-                    ? `button-white`
-                    : `button-black`}`}>
-                View More Projects
-            </button>
+            {
+                projectsDisplayed < projects.length &&
+                    <button
+                        className={`margin-top-3 ${theme === `light`
+                            ? `button-white`
+                            : `button-black`}`}
+                        onClick={() => setProjectsDisplayed(projectsDisplayed + 3,)}>
+                        View More Projects
+                    </button>
+            }
         </div>
         <div
             className={theme === `light`

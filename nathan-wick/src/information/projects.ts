@@ -7,6 +7,9 @@ import catmapImage from "../images/catmap.webp";
 import ifoundItImage from "../images/ifound-it.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
+import medpromptImage from "../images/medprompt.webp";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import sprostImage from "../images/sprost.webp";
 
 const projects: Project[] = [
@@ -78,6 +81,29 @@ const projects: Project[] = [
         "repository": `https://github.com/nathan-wick/found-not-lost`,
         "start": new Date(`2022-02-23`,),
         "summary": `This iOS app helps people return or find lost items by allowing users to post found items on a map for others to see.`,
+        "version": {
+            "major": 1,
+            "minor": 0,
+            "patch": 0,
+        },
+    },
+    {
+        "contributions": [
+            `Led an agile team of 6 software developers to deliver a high-quality Android application on time`,
+            `Utilized the SCRUM project management framework to ensure that the project was well-organized and productive`,
+            `Programmed with the Android Studio IDE, Kotlin language, and Git version control system to create a robust and user-friendly application`,
+        ],
+        "description": [
+            `MedPrompt is a native Android application that helps users stay organized and on top of their medication and doctor's appointments. The application was developed using the SCRUM project management framework and the Android Studio IDE, Kotlin language, and Git version control system.`,
+            `The project was led by an agile team of 6 software developers, including myself. I was responsible for the overall project management. I worked closely with the team to ensure that the project was delivered on time.`,
+            `The MedPrompt application is a valuable tool for users who want to stay organized and on top of their medication and doctor's appointments. The application is easy to use and has a number of features that make it a valuable resource for users, such as a reminder system that sends notifications to users when they need to take their medication or attend a doctor's appointment.`,
+        ],
+        "end": new Date(`2022-07-27`,),
+        "image": medpromptImage,
+        "name": `MedPrompt`,
+        "repository": `https://github.com/nathan-wick/medprompt`,
+        "start": new Date(`2022-05-11`,),
+        "summary": `This Android application helps users stay organized and on top of their medication and doctor's appointments.`,
         "version": {
             "major": 1,
             "minor": 0,
