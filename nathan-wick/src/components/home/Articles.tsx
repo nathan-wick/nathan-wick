@@ -1,3 +1,4 @@
+import {useContext, useState,} from "react";
 import {ThemeContext,} from "../../contexts/Theme";
 import {WindowContext,} from "../../contexts/Window";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -7,12 +8,15 @@ import articleDark from "../../icons/article-dark.svg";
 // @ts-ignore
 import articleLight from "../../icons/article-light.svg";
 import articles from "../../information/articles";
-import {useContext,} from "react";
 
 const Articles = () => {
 
     const {theme,} = useContext(ThemeContext,),
-        {size,} = useContext(WindowContext,);
+        {size,} = useContext(WindowContext,),
+        [
+            articlesDisplayed,
+            setArticlesDisplayed,
+        ] = useState(3,);
 
     return <>
         <div
@@ -49,7 +53,7 @@ const Articles = () => {
                 {
                     articles.slice(
                         0,
-                        3,
+                        articlesDisplayed,
                     ).map((article, articleIndex,) => <div
                         key={articleIndex}
                         className="column padding-1">
@@ -85,12 +89,16 @@ const Articles = () => {
                     </div>,)
                 }
             </div>
-            <button
-                className={`margin-top-3 ${theme === `light`
-                    ? `button-white`
-                    : `button-black`}`}>
-                View More Articles
-            </button>
+            {
+                articlesDisplayed < articles.length &&
+                    <button
+                        className={`margin-top-3 ${theme === `light`
+                            ? `button-white`
+                            : `button-black`}`}
+                        onClick={() => setArticlesDisplayed(articlesDisplayed + 3,)}>
+                        View More Articles
+                    </button>
+            }
         </div>
         <div
             className={theme === `light`

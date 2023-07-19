@@ -1,4 +1,5 @@
 import React, {useContext,} from "react";
+import {Helmet,} from "react-helmet";
 import PageNotFound from "../components/PageNotFound";
 import {ThemeContext,} from "../contexts/Theme";
 import {WindowContext,} from "../contexts/Window";
@@ -21,6 +22,11 @@ const Article = () => {
         {
             article
                 ? <>
+                    <Helmet>
+                        <title>{article.name}</title>
+                        <meta name="description" content={article.description} />
+                        <meta name="robots" content="index, follow" />
+                    </Helmet>
                     <style>
                         {
                             `.article:before {
