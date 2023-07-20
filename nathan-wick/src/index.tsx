@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import {BrowserRouter, Route, Routes,} from 'react-router-dom';
+import {RouterProvider, createBrowserRouter,} from 'react-router-dom';
 import Article from './views/Article';
 import {HelmetProvider,} from 'react-helmet-async';
 import Home from './views/Home';
@@ -11,29 +11,31 @@ import ReactDOM from 'react-dom/client';
 import Theme from './contexts/Theme';
 import Window from './contexts/Window';
 
-const root = ReactDOM.createRoot(document.getElementById(`root`,) as HTMLElement,);
+const root = ReactDOM.createRoot(document.getElementById(`root`,) as HTMLElement,),
+    router = createBrowserRouter([
+        {
+            "element": <Home />,
+            "errorElement": <PageNotFound />,
+            "path": `/`,
+        },
+        {
+            "element": <Project />,
+            "path": `projects/:projectId`,
+        },
+        {
+            "element": <Article />,
+            "path": `articles/:articleId`,
+        },
+    ],);
 
 root.render(<React.StrictMode>
     <HelmetProvider>
         <Window>
             <Theme>
-                <BrowserRouter>
+                <>
                     <Navigation />
-                    <Routes>
-                        <Route
-                            path="/"
-                            element={<Home />}/>
-                        <Route
-                            path="projects/:projectId"
-                            element={<Project />}/>
-                        <Route
-                            path="articles/:articleId"
-                            element={<Article />}/>
-                        <Route
-                            path="*"
-                            element={<PageNotFound />}/>
-                    </Routes>
-                </BrowserRouter>
+                    <RouterProvider router={router} />
+                </>
             </Theme>
         </Window>
     </HelmetProvider>
