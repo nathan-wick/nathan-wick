@@ -1,25 +1,28 @@
-const pathSegmentsToKeep = 0,
-    {location,} = window;
+/* eslint-disable require-unicode-regexp */
+/* eslint-disable id-length */
 
-location.replace(`${location.protocol}//${location.hostname}${location.port
-    ? `:${location.port}`
+const pathSegmentsToKeep = 0,
+    l = window.location;
+
+l.replace(`${l.protocol}//${l.hostname}${l.port
+    ? `:${l.port}`
     : ``
-}${location.pathname.split(`/`,).slice(
+}${l.pathname.split(`/`,).slice(
     0,
     1 + pathSegmentsToKeep,
 ).
     join(`/`,)}/?/${
-    location.pathname.slice(1,).split(`/`,).
+    l.pathname.slice(1,).split(`/`,).
         slice(pathSegmentsToKeep,).
         join(`/`,).
         replace(
-            /&/gu,
+            /&/g,
             `~and~`,
         )
-}${location.search
-    ? `&${location.search.slice(1,).replace(
-        /&/gu,
+}${l.search
+    ? `&${l.search.slice(1,).replace(
+        /&/g,
         `~and~`,
     )}`
     : ``
-}${location.hash}`,);
+}${l.hash}`,);

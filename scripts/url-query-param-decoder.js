@@ -1,20 +1,24 @@
-(function decodeQueryParam (location,) {
+/* eslint-disable require-unicode-regexp */
+/* eslint-disable id-length */
+/* eslint-disable func-names */
 
-    if (location.search[1] === `/`) {
+(function (l,) {
 
-        const decoded = location.search.slice(1,).split(`&`,).
-            map((string,) => string.replace(
-                /~and~/gu,
+    if (l.search[1] === `/`) {
+
+        const decoded = l.search.slice(1,).split(`&`,).
+            map((s,) => s.replace(
+                /~and~/g,
                 `&`,
             ),).
             join(`?`,);
         window.history.replaceState(
             null,
             null,
-            location.pathname.slice(
+            l.pathname.slice(
                 0,
                 -1,
-            ) + decoded + location.hash,
+            ) + decoded + l.hash,
         );
 
     }
