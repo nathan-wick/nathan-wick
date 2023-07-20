@@ -58,7 +58,7 @@ const Skills = () => {
             {
                 skills.sort((first, second,) => first.title.localeCompare(second.title,),).map((skill, skillIndex,) => <div
                     key={skillIndex}
-                    className={`pill width-fit-content ${getSkillBackground(skill.type,)}`}>
+                    className={`width-fit-content margin-1 padding-1 rounded text-bold ${getSkillBackground(skill.type,)}`}>
                     {skill.title}
                 </div>,)
             }
