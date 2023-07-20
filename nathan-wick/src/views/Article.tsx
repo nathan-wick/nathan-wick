@@ -1,5 +1,5 @@
 import React, {useContext,} from "react";
-import {Helmet,} from "react-helmet";
+import {Helmet,} from "react-helmet-async";
 import PageNotFound from "../components/PageNotFound";
 import {ThemeContext,} from "../contexts/Theme";
 import {WindowContext,} from "../contexts/Window";

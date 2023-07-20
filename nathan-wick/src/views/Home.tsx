@@ -2,7 +2,7 @@ import Articles from "../components/home/Articles";
 import Education from "../components/home/Education";
 import Experience from "../components/home/Experience";
 import Heading from "../components/home/Heading";
-import {Helmet,} from "react-helmet";
+import {Helmet,} from "react-helmet-async";
 import Projects from "../components/home/Projects";
 import Skills from "../components/home/Skills";
 import Statistics from "../components/home/Statistics";

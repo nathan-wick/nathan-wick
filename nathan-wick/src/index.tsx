@@ -1,6 +1,7 @@
 import './styles/index.scss';
 import {RouterProvider, createBrowserRouter,} from 'react-router-dom';
 import Article from './views/Article';
+import {HelmetProvider,} from 'react-helmet-async';
 import Home from './views/Home';
 import Navigation from './components/Navigation';
 import PageNotFound from './components/PageNotFound';
@@ -28,12 +29,14 @@ const root = ReactDOM.createRoot(document.getElementById(`root`,) as HTMLElement
     ],);
 
 root.render(<React.StrictMode>
-    <Window>
-        <Theme>
-            <>
-                <Navigation />
-                <RouterProvider router={router} />
-            </>
-        </Theme>
-    </Window>
+    <HelmetProvider>
+        <Window>
+            <Theme>
+                <>
+                    <Navigation />
+                    <RouterProvider router={router} />
+                </>
+            </Theme>
+        </Window>
+    </HelmetProvider>
 </React.StrictMode>,);
