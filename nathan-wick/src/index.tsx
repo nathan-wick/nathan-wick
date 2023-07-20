@@ -1,6 +1,7 @@
 import './styles/index.scss';
 import {RouterProvider, createBrowserRouter,} from 'react-router-dom';
 import Article from './views/Article';
+import Footer from './components/Footer';
 import {HelmetProvider,} from 'react-helmet-async';
 import Home from './views/Home';
 import Navigation from './components/Navigation';
@@ -35,6 +36,7 @@ root.render(<React.StrictMode>
                 <>
                     <Navigation />
                     <RouterProvider router={router} />
+                    <Footer />
                 </>
             </Theme>
         </Window>
