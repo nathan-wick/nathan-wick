@@ -56,7 +56,14 @@ const Articles = () => {
                         articlesDisplayed,
                     ).map((article, articleIndex,) => <div
                         key={articleIndex}
-                        className="column padding-1">
+                        className="column padding-1"
+                        onClick={() => window.open(
+                            `/articles/${article.name.toLowerCase().replace(
+                                / /gu,
+                                `-`,
+                            )}`,
+                            `_self`,
+                        )}>
                         <div
                             className={`rounded ${
                                 theme === `light`

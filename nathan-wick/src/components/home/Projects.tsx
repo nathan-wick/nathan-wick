@@ -56,7 +56,14 @@ const Projects = () => {
                         projectsDisplayed,
                     ).map((project, projectIndex,) => <div
                         key={projectIndex}
-                        className="column padding-1">
+                        className="column padding-1"
+                        onClick={() => window.open(
+                            `/projects/${project.name.toLowerCase().replace(
+                                / /gu,
+                                `-`,
+                            )}`,
+                            `_self`,
+                        )}>
                         <div
                             className={`rounded ${
                                 theme === `light`
