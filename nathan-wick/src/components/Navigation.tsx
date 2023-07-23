@@ -90,17 +90,17 @@ const Navigation = () => {
 
     return <>
         <div
-            className={`navigation ${theme} ${size === `large` || menuIsOpen === true
-                ? `row-2`
-                : `row-auto-min`}`}>
+            className={`navigation ${theme} ${
+                size === `large` || menuIsOpen === true
+                    ? `row-2`
+                    : `row-auto-min`
+            }`}>
             <div
                 className="column">
                 {
                     size !== `large` && menuIsOpen === false &&
                         <div
-                            className={`text-navigation ${scroll > 1 || pathname !== `/`
-                                ? `show`
-                                : `hide`}`}
+                            className="text-navigation"
                             onClick={() => {
 
                                 window.location.href = `/`;
@@ -196,9 +196,6 @@ const Navigation = () => {
                         ? scroll
                         : 0}%`,
                 }} />
-        </div>
-        <div
-            className="padding-top-3">
         </div>
     </>;
 

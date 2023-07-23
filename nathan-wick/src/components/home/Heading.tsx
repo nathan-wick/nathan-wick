@@ -12,7 +12,11 @@ const Heading = () => {
         {size,} = useContext(WindowContext,);
 
     return <div
-        className="container">
+        className={`container padding-top-5 ${
+            theme === `light`
+                ? `background-colorful-light`
+                : `background-colorful-dark`
+        }`}>
         <div
             className={`viewport-height-90 ${
                 size === `large`

@@ -33,21 +33,57 @@
 }
 
 .background-red {
-    background-image: linear-gradient(colors.$light-red , colors.$red);
+    background-image: linear-gradient(colors.$light-red, colors.$red);
+}
+
+.background-red-gradient-left {
+    background-image: radial-gradient(ellipse at center left, rgba(colors.$red, 0.2), transparent 60%);
 }
 
 .background-yellow {
-    background-image: linear-gradient(colors.$light-yellow , colors.$yellow);
+    background-image: linear-gradient(colors.$light-yellow, colors.$yellow);
+}
+
+.background-yellow-gradient-left {
+    background-image: radial-gradient(ellipse at center left, rgba(colors.$yellow, 0.2), transparent 60%);
 }
 
 .background-green {
-    background-image: linear-gradient(colors.$light-green , colors.$green);
+    background-image: linear-gradient(colors.$light-green, colors.$green);
+}
+
+.background-green-gradient-left {
+    background-image: radial-gradient(ellipse at center left, rgba(colors.$green, 0.2), transparent 60%);
 }
 
 .background-blue {
-    background-image: linear-gradient(colors.$light-blue , colors.$blue);
+    background-image: linear-gradient(colors.$light-blue, colors.$blue);
+}
+
+.background-blue-gradient-right {
+    background-image: radial-gradient(ellipse at center right, rgba(colors.$blue, 0.2), transparent 60%);
 }
 
 .background-purple {
-    background-image: linear-gradient(colors.$light-purple , colors.$purple);
+    background-image: linear-gradient(colors.$light-purple, colors.$purple);
+}
+
+.background-purple-gradient-right {
+    background-image: radial-gradient(ellipse at center right, rgba(colors.$purple, 0.2), transparent 60%);
+}
+
+.background-colorful-light {
+    background-image: linear-gradient(180deg, rgba(colors.$white, 0.01), rgba(colors.$white, 1) 80%),
+        radial-gradient(ellipse at top left, rgba(colors.$blue, 0.5), transparent 50%),
+        radial-gradient(ellipse at top right, rgba(colors.$yellow, 0.5), transparent 50%),
+        radial-gradient(ellipse at center left, rgba(colors.$red, 0.5), transparent 50%),
+        radial-gradient(ellipse at center right, rgba(colors.$purple, 0.5), transparent 50%);
+}
+
+.background-colorful-dark {
+    background-image: linear-gradient(180deg, rgba(colors.$black, 0.01), rgba(colors.$black, 1) 80%),
+        radial-gradient(ellipse at top left, rgba(colors.$blue, 0.5), transparent 50%),
+        radial-gradient(ellipse at top right, rgba(colors.$yellow, 0.5), transparent 50%),
+        radial-gradient(ellipse at center left, rgba(colors.$red, 0.5), transparent 50%),
+        radial-gradient(ellipse at center right, rgba(colors.$purple, 0.5), transparent 50%);
 }

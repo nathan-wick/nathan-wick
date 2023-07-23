@@ -22,6 +22,7 @@ module.exports = {
             2,
             `always`,
         ],
+        "complexity": 0,
         "implicit-arrow-linebreak": 0,
         "max-len": 0,
         "max-lines": 0,
