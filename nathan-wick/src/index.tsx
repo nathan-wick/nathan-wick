@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import {HelmetProvider,} from 'react-helmet-async';
 import Home from './views/Home';
 import Navigation from './components/Navigation';
-import PageNotFound from './components/PageNotFound';
+import PageNotFound from './views/PageNotFound';
 import Project from './views/Project';
 import React from 'react';
 import ReactDOM from 'react-dom/client';

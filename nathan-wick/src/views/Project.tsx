@@ -1,6 +1,6 @@
 import React, {useContext,} from "react";
 import {Helmet,} from "react-helmet-async";
-import PageNotFound from "../components/PageNotFound";
+import PageNotFound from "./PageNotFound";
 import {ThemeContext,} from "../contexts/Theme";
 import {WindowContext,} from "../contexts/Window";
 import dateString from "../utilities/dateString";

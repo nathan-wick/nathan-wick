@@ -5,7 +5,7 @@ const PageNotFound = () => {
     const {pathname,} = location;
 
     return <div
-        className="align-horizontal-center">
+        className="align-horizontal-center padding-top-5">
         <div
             className="text-large">
             Page Not Found

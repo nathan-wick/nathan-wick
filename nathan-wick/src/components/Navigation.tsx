@@ -154,7 +154,12 @@ const Navigation = () => {
                             {
                                 pathname === `/` &&
                                     <button
-                                        onClick={() => setMenuIsOpen(false,)}>
+                                        onClick={() => {
+
+                                            setMenuIsOpen(false,);
+                                            window.location.href = `mailto:nathanwick2001@gmail.com`;
+
+                                        }}>
                                         Contact
                                     </button>
                             }
