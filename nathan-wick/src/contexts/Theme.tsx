@@ -1,7 +1,4 @@
 import React, {FC, createContext, useEffect, useState,} from "react";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import colors from "../styles/colors.scss";
 
 export const ThemeContext = createContext<{
         setTheme: React.Dispatch<React.SetStateAction<`light` | `dark`>>,
@@ -16,7 +13,25 @@ export const ThemeContext = createContext<{
         children: JSX.Element
     }> = ({children,},) => {
 
-        const preferredTheme = localStorage.getItem(`theme`,) as `light` | `dark` | null ?? `light`,
+        const getPreferredTheme = () => {
+
+                const storedPreference = localStorage.getItem(`theme`,) as `light` | `dark` | null;
+                if (storedPreference) {
+
+                    return storedPreference;
+
+                }
+
+                if (window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`,).matches) {
+
+                    return `dark`;
+
+                }
+
+                return `light`;
+
+            },
+            preferredTheme = getPreferredTheme(),
             [
                 theme,
                 setTheme,
@@ -39,15 +54,13 @@ export const ThemeContext = createContext<{
                 }
                 if (theme === `light`) {
 
-                    // eslint-disable-next-line no-warning-comments
-                    // TODO Replace style with class
-                    document.body.style.backgroundColor = colors.white;
-                    document.body.style.color = colors.black;
+                    document.body.classList.add(`light`,);
+                    document.body.classList.remove(`dark`,);
 
                 } else {
 
-                    document.body.style.backgroundColor = colors.black;
-                    document.body.style.color = colors.white;
+                    document.body.classList.remove(`light`,);
+                    document.body.classList.add(`dark`,);
 
                 }
 
