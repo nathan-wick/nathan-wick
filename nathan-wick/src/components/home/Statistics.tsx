@@ -29,7 +29,7 @@ const Statistics = () => {
                     </div>
                     <div
                         className="text-small">
-                        {statistic.title}
+                        ~ {statistic.title}
                     </div>
                 </div>,)
             }
