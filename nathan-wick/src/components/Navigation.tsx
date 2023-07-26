@@ -157,7 +157,7 @@ const Navigation = () => {
                                         onClick={() => {
 
                                             setMenuIsOpen(false,);
-                                            window.location.href = `mailto:nathanwick2001@gmail.com`;
+                                            window.location.href = `mailto:${person.email}`;
 
                                         }}>
                                         Contact

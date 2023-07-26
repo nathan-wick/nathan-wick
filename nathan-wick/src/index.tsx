@@ -9,6 +9,7 @@ import PageNotFound from './views/PageNotFound';
 import Project from './views/Project';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Resume from './views/Resume';
 import Theme from './contexts/Theme';
 import Window from './contexts/Window';
 
@@ -18,6 +19,10 @@ const root = ReactDOM.createRoot(document.getElementById(`root`,) as HTMLElement
             "element": <Home />,
             "errorElement": <PageNotFound />,
             "path": `/`,
+        },
+        {
+            "element": <Resume />,
+            "path": `resume`,
         },
         {
             "element": <Project />,
