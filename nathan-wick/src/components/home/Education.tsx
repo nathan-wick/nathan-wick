@@ -77,11 +77,11 @@ const Education = () => {
                                     <img
                                         className="width-100 rounded"
                                         src={education.image}
-                                        alt={education.title} />
+                                        alt={education.school} />
                                 }
                                 <div
                                     className="text-medium">
-                                    {education.title}
+                                    {education.school}
                                 </div>
                                 <div
                                     className="text-small">

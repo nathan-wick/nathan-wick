@@ -1,5 +1,5 @@
 export declare interface Education {
-    title: string,
+    school: string,
     degree: string,
     description: string[],
     major: string,
@@ -8,4 +8,6 @@ export declare interface Education {
     gradePointAverage: number,
     featuredCoursework: string[],
     image: string,
+    city: string,
+    state: string,
 }

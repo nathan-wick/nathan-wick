@@ -6,4 +6,6 @@ export declare interface Experience {
     end?: Date,
     contributions: string[],
     image: string,
+    city: string,
+    state: string,
 }
