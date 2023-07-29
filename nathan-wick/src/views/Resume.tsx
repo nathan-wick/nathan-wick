@@ -1,5 +1,6 @@
 import {Document, Link, PDFViewer, Page, StyleSheet, Text, View,} from "@react-pdf/renderer";
 import React from "react";
+import arrayString from "../utilities/arrayString";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import colors from "../styles/colors.scss";
@@ -267,6 +268,88 @@ const Resume = () => {
                             }
                         </>,)
                     }
+                </View>
+                <View
+                    style={styles.section}>
+                    <Text
+                        style={styles.subtitle}>
+                        SKILLS
+                    </Text>
+                    <View
+                        style={{
+                            "flexDirection": `row`,
+                            "paddingHorizontal": 20,
+                        }}>
+                        <Text>
+                            •
+                        </Text>
+                        <Text
+                            style={{
+                                "paddingLeft": 10,
+                            }}>
+                            Languages:{arrayString(skills.filter((skill,) => skill.type === `language`,).map((skill,) => skill.title,),)}
+                        </Text>
+                    </View>
+                    <View
+                        style={{
+                            "flexDirection": `row`,
+                            "paddingHorizontal": 20,
+                        }}>
+                        <Text>
+                            •
+                        </Text>
+                        <Text
+                            style={{
+                                "paddingLeft": 10,
+                            }}>
+                            Tools:{arrayString(skills.filter((skill,) => skill.type === `tool`,).map((skill,) => skill.title,),)}
+                        </Text>
+                    </View>
+                    <View
+                        style={{
+                            "flexDirection": `row`,
+                            "paddingHorizontal": 20,
+                        }}>
+                        <Text>
+                            •
+                        </Text>
+                        <Text
+                            style={{
+                                "paddingLeft": 10,
+                            }}>
+                            Methodologies:{arrayString(skills.filter((skill,) => skill.type === `methodology`,).map((skill,) => skill.title,),)}
+                        </Text>
+                    </View>
+                    <View
+                        style={{
+                            "flexDirection": `row`,
+                            "paddingHorizontal": 20,
+                        }}>
+                        <Text>
+                            •
+                        </Text>
+                        <Text
+                            style={{
+                                "paddingLeft": 10,
+                            }}>
+                            Domains:{arrayString(skills.filter((skill,) => skill.type === `domain`,).map((skill,) => skill.title,),)}
+                        </Text>
+                    </View>
+                    <View
+                        style={{
+                            "flexDirection": `row`,
+                            "paddingHorizontal": 20,
+                        }}>
+                        <Text>
+                            •
+                        </Text>
+                        <Text
+                            style={{
+                                "paddingLeft": 10,
+                            }}>
+                            Soft:{arrayString(skills.filter((skill,) => skill.type === `soft`,).map((skill,) => skill.title,),)}
+                        </Text>
+                    </View>
                 </View>
             </Page>
         </Document>;
