@@ -1,4 +1,4 @@
-import {Document, PDFViewer, Page, StyleSheet, Text, View,} from "@react-pdf/renderer";
+import {Document, Link, PDFViewer, Page, StyleSheet, Text, View,} from "@react-pdf/renderer";
 import React from "react";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -7,6 +7,7 @@ import dateString from "../utilities/dateString";
 import educations from "../information/educations";
 import experiences from "../information/experiences";
 import person from "../information/person";
+import projects from "../information/projects";
 import skills from "../information/skills";
 
 const Resume = () => {
@@ -18,12 +19,14 @@ const Resume = () => {
             },
             "page": {
                 "backgroundColor": colors.white,
+                "color": colors.black,
+                "fontFamily": `Times-Roman`,
                 "fontSize": 10,
                 "lineHeight": 1.4,
             },
             "section": {
                 "paddingHorizontal": 30,
-                "paddingVertical": 10,
+                "paddingTop": 10,
             },
             "subtitle": {
                 "borderBottom": 1,
@@ -70,7 +73,10 @@ const Resume = () => {
                                         "textAlign": `left`,
                                         "width": `100%`,
                                     }}>
-                                    <Text>
+                                    <Text
+                                        style={{
+                                            "fontFamily": `Times-Bold`,
+                                        }}>
                                         {education.degree}, {education.major}
                                     </Text>
                                 </View>
@@ -94,7 +100,10 @@ const Resume = () => {
                                         "textAlign": `left`,
                                         "width": `100%`,
                                     }}>
-                                    <Text>
+                                    <Text
+                                        style={{
+                                            "fontFamily": `Times-Italic`,
+                                        }}>
                                         {education.school}
                                     </Text>
                                 </View>
@@ -129,7 +138,10 @@ const Resume = () => {
                                         "textAlign": `left`,
                                         "width": `100%`,
                                     }}>
-                                    <Text>
+                                    <Text
+                                        style={{
+                                            "fontFamily": `Times-Bold`,
+                                        }}>
                                         {experience.title}
                                     </Text>
                                 </View>
@@ -150,6 +162,7 @@ const Resume = () => {
                                 style={{"flexDirection": `row`,}}>
                                 <View
                                     style={{
+                                        "fontFamily": `Times-Italic`,
                                         "textAlign": `left`,
                                         "width": `100%`,
                                     }}>
@@ -169,6 +182,76 @@ const Resume = () => {
                             </View>
                             {
                                 experience.contributions.map((contribution,) => <View
+                                    style={{
+                                        "flexDirection": `row`,
+                                        "paddingHorizontal": 20,
+                                    }}>
+                                    <Text>
+                                        •
+                                    </Text>
+                                    <Text
+                                        style={{"paddingLeft": 10,}}>
+                                        {contribution}
+                                    </Text>
+                                </View>,)
+                            }
+                        </>,)
+                    }
+                </View>
+                <View
+                    style={styles.section}>
+                    <Text
+                        style={styles.subtitle}>
+                        PROJECTS
+                    </Text>
+                    {
+                        projects.map((project,) => <>
+                            <View
+                                style={{"flexDirection": `row`,}}>
+                                <View
+                                    style={{
+                                        "textAlign": `left`,
+                                        "width": `100%`,
+                                    }}>
+                                    <Text
+                                        style={{
+                                            "fontFamily": `Times-Bold`,
+                                        }}>
+                                        {project.name}
+                                    </Text>
+                                </View>
+                                <View
+                                    style={{
+                                        "textAlign": `right`,
+                                        "width": `100%`,
+                                    }}>
+                                    <Text>
+                                        {dateString(
+                                            project.start,
+                                            project.end,
+                                        )}
+                                    </Text>
+                                </View>
+                            </View>
+                            <Text>
+                                <Link
+                                    style={{
+                                        "color": colors.black,
+                                        "fontFamily": `Times-Italic`,
+                                        "textDecoration": `none`,
+                                    }}
+                                    src={`https://nathanwick.com/${project.name.toLowerCase().replace(
+                                        / /gu,
+                                        `-`,
+                                    )}}`}>
+                                    nathanwick.com/{project.name.toLowerCase().replace(
+                                        / /gu,
+                                        `-`,
+                                    )}
+                                </Link>
+                            </Text>
+                            {
+                                project.contributions?.map((contribution,) => <View
                                     style={{
                                         "flexDirection": `row`,
                                         "paddingHorizontal": 20,
