@@ -74,7 +74,7 @@ const Project = () => {
                                                     project.repository,
                                                     `_blank`,
                                                 )}>
-                                                View Repository
+                                                View Code
                                             </button>
                                     }
                                 </div>

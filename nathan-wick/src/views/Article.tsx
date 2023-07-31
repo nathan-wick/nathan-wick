@@ -39,7 +39,7 @@ const Article = () => {
                         <div
                             className="position-relative">
                             <div
-                                className="padding-1 padding-top-5">
+                                className="padding-1 padding-top-5 minimum-viewport-height-40">
                                 <div
                                     className={`width-fit-content padding-1 rounded ${theme === `light`
                                         ? `background-white`

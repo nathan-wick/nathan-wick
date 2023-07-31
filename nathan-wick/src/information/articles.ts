@@ -1,10 +1,14 @@
 import {Article,} from "../types/Article";
 import EightEssentialTypescriptDataStructures from "../components/articles/EightEssentialTypescriptDataStructures";
+import ProgrammingOneZeroOne from "../components/articles/ProgrammingOneZeroOne";
 import ThreeTraitsEveryGoodProgrammerHas from "../components/articles/ThreeTraitsEveryGoodProgrammerHas";
 import TimeComplexityExplainedSimple from "../components/articles/TimeComplexityExplainedSimple";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import eightEssentialTypescriptDataStructuresImage from "../images/data.webp";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import programmingOneZeroOne from "../images/laptop.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import threeTraitsEveryGoodProgrammerHasImageImage from "../images/programmer.webp";
@@ -33,6 +37,13 @@ const articles: Article[] = [
         "description": `This article will cover 8 of the most important data structures, with code examples and explanations.`,
         "image": eightEssentialTypescriptDataStructuresImage,
         "name": `8 Essential Typescript Data Structures`,
+    },
+    {
+        "body": ProgrammingOneZeroOne,
+        "date": new Date(`2023-7-30`,),
+        "description": `This article is a beginners guide to programming, with examples, illustrations, and practice projects.`,
+        "image": programmingOneZeroOne,
+        "name": `Programming 101`,
     },
 ];
 
