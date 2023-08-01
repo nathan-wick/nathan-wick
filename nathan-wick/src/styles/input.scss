@@ -1,10 +1,22 @@
 @use 'colors' as colors;
 
+input {
+    border: none;
+    border-radius: 3rem;
+    color: colors.$black;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 0.4rem 0.2rem;
+    padding: 0.4rem 0.8rem;
+}
+
 button {
     background-image: linear-gradient(colors.$light-blue , colors.$blue);
     border: none;
     border-radius: 3rem;
     color: colors.$black;
+    cursor: pointer;
     font-family: inherit;
     font-size: 1rem;
     font-weight: bold;

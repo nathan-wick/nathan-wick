@@ -40,7 +40,7 @@ const articles: Article[] = [
     },
     {
         "body": ProgrammingOneZeroOne,
-        "date": new Date(`2023-7-30`,),
+        "date": new Date(`2023-8-1`,),
         "description": `This article is a beginners guide to programming, with examples, illustrations, and practice projects.`,
         "image": programmingOneZeroOne,
         "name": `Programming 101`,
