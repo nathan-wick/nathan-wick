@@ -18,6 +18,13 @@ import timeComplexityExplainedSimpleImage from "../images/time.webp";
 
 const articles: Article[] = [
     {
+        "body": ProgrammingOneZeroOne,
+        "date": new Date(`2023-8-1`,),
+        "description": `This article is a beginners guide to programming, with examples and a practice project.`,
+        "image": programmingOneZeroOne,
+        "name": `Programming 101`,
+    },
+    {
         "body": ThreeTraitsEveryGoodProgrammerHas,
         "date": new Date(`2022-4-27`,),
         "description": `Learn the 3 essential traits that every good programmer has, and start developing them today!`,
@@ -37,13 +44,6 @@ const articles: Article[] = [
         "description": `This article will cover 8 of the most important data structures, with code examples and explanations.`,
         "image": eightEssentialTypescriptDataStructuresImage,
         "name": `8 Essential Typescript Data Structures`,
-    },
-    {
-        "body": ProgrammingOneZeroOne,
-        "date": new Date(`2023-8-1`,),
-        "description": `This article is a beginners guide to programming, with examples, illustrations, and practice projects.`,
-        "image": programmingOneZeroOne,
-        "name": `Programming 101`,
     },
 ];
 

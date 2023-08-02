@@ -38,8 +38,8 @@ const QuizQuestion: FC<{
                 : status === false
                     ? `background-red`
                     : theme === `light`
-                        ? `background-dark-white`
-                        : `background-light-black`}`}
+                        ? `background-dark-white text-black`
+                        : `background-light-black text-white`}`}
             onChange={(event,) => setInput(event.target.value,)}
             placeholder="Enter Your Answer Here" />
         <button

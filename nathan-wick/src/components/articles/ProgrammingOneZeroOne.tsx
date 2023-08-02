@@ -21,14 +21,8 @@ const ProgrammingOneZeroOne = <>
         Why Learn Programming?
     </div>
     <div
-        className="text-small">
-        Programmers use programming languages for:
-        <ul>
-            <li>Websites</li>
-            <li>Video Games</li>
-            <li>Data Science</li>
-            <li>Robotics</li>
-        </ul>
+        className="text-small text-indent">
+        Learning programming has many benefits, both personal and professional. It can help you develop problem-solving skills, logical thinking, and creativity. There is a high demand for skilled programmers in a variety of industries, including tech, finance, and healthcare.
     </div>
     <div
         className="text-medium">
@@ -155,11 +149,11 @@ if (age >= 18) {
         solution="true" />
     <div
         className="text-small text-bold">
-            Loops
+            Loops and Arrays
     </div>
     <div
         className="text-small text-indent">
-            Loops are sequences of instructions that continually repeat until a certain condition is reached. Loops are commonly used with arrays. An array is a group of variables of the same type.
+            Loops are sequences of instructions that continually repeat until a certain condition is reached. Loops are commonly used with arrays. An array is a data structure that stores a collection of elements of the same type.
     </div>
     <CodeBlock
         code={`let start = 1;
@@ -172,7 +166,7 @@ for (let i = start; i <= end; i++) {
         language="javascript" />
     <div
         className="text-small text-indent">
-            Using the variables in the example above, what would be the output of the codes below?
+            The elements of an array are indexed, meaning that each element has a unique identifier called its index. The index of an element is its position in the array, starting at 0. A specific element in an array can be accessed by providing the element's index. If there's no element associated with the index provided, the output will be undefined. Using the variables in the example above, what would be the output of the codes below?
     </div>
     <CodeBlock
         code={`console.log(numbers[0]);`}
@@ -198,14 +192,14 @@ for (let i = start; i <= end; i++) {
             Methods are sets of code that are referred to by a name and can be invoked at any point in a program.
     </div>
     <CodeBlock
-        code={`function printNumbers(start, end) {
+        code={`function getNumbers(start, end) {
     let numbers = [];
 
     for (let i = start; i <= end; i++) {
         numbers.push(i);
     }
 
-    console.log(numbers);
+    return numbers;
 }`}
         language="javascript" />
     <div
@@ -213,15 +207,15 @@ for (let i = start; i <= end; i++) {
             Using the method in the example above, what would be the output of the codes below?
     </div>
     <CodeBlock
-        code={`printNumbers(1, 5);`}
+        code={`console.log(getNumbers(1, 5)[2]);`}
         language="javascript" />
     <QuizQuestion
-        solution="[1, 2, 3, 4, 5]" />
+        solution="3" />
     <CodeBlock
-        code={`printNumbers(2, 8);`}
+        code={`console.log(getNumbers(2, 8)[3]);`}
         language="javascript" />
     <QuizQuestion
-        solution="[2, 3, 4, 5, 6, 7, 8]" />
+        solution="5" />
     <div
         className="text-medium">
         Calculator Website
@@ -259,7 +253,7 @@ for (let i = start; i <= end; i++) {
     </div>
     <div
         className="text-small text-indent">
-            The code below creates the structure a simple calculator. The input tags create two text boxes where you can enter numbers. The button tags create four buttons that you can use to add, subtract, multiply, and divide the numbers in the text boxes. The div tag creates a container where the result of the calculation will be displayed.
+            The code below creates the structure of a simple calculator. The input tags create two text boxes where we can enter numbers. The button tags create four buttons that we can use to add, subtract, multiply, and divide the numbers in the text boxes. The div tag creates a container where the result of the calculation will be displayed.
     </div>
     <CodeBlock
         code={`<input type="number" id="number1">
@@ -339,7 +333,7 @@ function divide() {
             </div>
             <div
                 className="text-small text-indent">
-                    The parseInt() function will convert the string value of the number1 and number2 variables to numbers. Then, the + operator will add the numbers and the result will be stored in the result variable. Finally, the result variable will be displayed in the result element.
+                    The parseInt() function will convert the string value of the number1 and number2 variables to numbers. Then, the + operator will add the numbers and the result will be stored in the result variable.
             </div>
             <CodeBlock
                 code={`function add() {
@@ -360,7 +354,7 @@ function divide() {
     </div>
     <div
         className="text-small text-indent">
-            The code below is used to style our calculator. The input tag is used to style the text boxes, the button tag is used to style the buttons, the #result tag is used to style the container for the result of a calculation.
+            The code below styles our calculator. The input tag is used to style the text boxes, the button tag is used to style the buttons, the #result tag is used to style the container for the result of a calculation.
     </div>
     <CodeBlock
         code={`input {
