@@ -41,8 +41,9 @@ const Resume = () => {
                 "width": `100%`,
             },
             "title": {
+                "fontFamily": `Times-Bold`,
                 "fontSize": 16,
-                "paddingTop": 20,
+                "paddingTop": 30,
             },
         },),
         ResumeDocument = () => <Document
