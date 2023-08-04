@@ -1,5 +1,7 @@
 import {Document, Link, PDFViewer, Page, StyleSheet, Text, View,} from "@react-pdf/renderer";
-import React from "react";
+import {Helmet,} from "react-helmet-async";
+import ScreenTooSmall from "./ScreenTooSmall";
+import {WindowContext,} from "../contexts/Window";
 import arrayString from "../utilities/arrayString";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -10,10 +12,15 @@ import experiences from "../information/experiences";
 import person from "../information/person";
 import projects from "../information/projects";
 import skills from "../information/skills";
+import {useContext,} from "react";
 
 const Resume = () => {
 
-    const styles = StyleSheet.create({
+    const {size,} = useContext(WindowContext,),
+        maximumEducations = 1,
+        maximumExperiences = 1,
+        maximumProjects = 4,
+        styles = StyleSheet.create({
             "heading": {
                 "textAlign": `center`,
                 "width": `100%`,
@@ -66,7 +73,12 @@ const Resume = () => {
                         EDUCATION
                     </Text>
                     {
-                        educations.map((education,) => <>
+                        educations.slice(
+                            0,
+                            maximumEducations,
+                        ).map((education, educationIndex,) => <View
+                            key={educationIndex}
+                            style={{"paddingBottom": 10,}}>
                             <View
                                 style={{"flexDirection": `row`,}}>
                                 <View
@@ -121,7 +133,7 @@ const Resume = () => {
                             <Text>
                                 {education.gradePointAverage.toFixed(1,)} GPA
                             </Text>
-                        </>,)
+                        </View>,)
                     }
                 </View>
                 <View
@@ -131,7 +143,12 @@ const Resume = () => {
                         EXPERIENCE
                     </Text>
                     {
-                        experiences.map((experience,) => <>
+                        experiences.slice(
+                            0,
+                            maximumExperiences,
+                        ).map((experience, experienceIndex,) => <View
+                            key={experienceIndex}
+                            style={{"paddingBottom": 10,}}>
                             <View
                                 style={{"flexDirection": `row`,}}>
                                 <View
@@ -182,7 +199,8 @@ const Resume = () => {
                                 </View>
                             </View>
                             {
-                                experience.contributions.map((contribution,) => <View
+                                experience.contributions.map((contribution, contributionIndex,) => <View
+                                    key={contributionIndex}
                                     style={{
                                         "flexDirection": `row`,
                                         "paddingHorizontal": 20,
@@ -196,7 +214,7 @@ const Resume = () => {
                                     </Text>
                                 </View>,)
                             }
-                        </>,)
+                        </View>,)
                     }
                 </View>
                 <View
@@ -206,7 +224,12 @@ const Resume = () => {
                         PROJECTS
                     </Text>
                     {
-                        projects.map((project,) => <>
+                        projects.slice(
+                            0,
+                            maximumProjects,
+                        ).map((project, projectIndex,) => <View
+                            key={projectIndex}
+                            style={{"paddingBottom": 10,}}>
                             <View
                                 style={{"flexDirection": `row`,}}>
                                 <View
@@ -234,25 +257,18 @@ const Resume = () => {
                                     </Text>
                                 </View>
                             </View>
-                            <Text>
-                                <Link
-                                    style={{
-                                        "color": colors.black,
-                                        "fontFamily": `Times-Italic`,
-                                        "textDecoration": `none`,
-                                    }}
-                                    src={`https://nathanwick.com/${project.name.toLowerCase().replace(
-                                        / /gu,
-                                        `-`,
-                                    )}}`}>
-                                    nathanwick.com/{project.name.toLowerCase().replace(
-                                        / /gu,
-                                        `-`,
-                                    )}
-                                </Link>
+                            <Text
+                                style={{
+                                    "fontFamily": `Times-Italic`,
+                                }}>
+                                nathanwick.com/{project.name.toLowerCase().replace(
+                                    / /gu,
+                                    `-`,
+                                )}
                             </Text>
                             {
-                                project.contributions?.map((contribution,) => <View
+                                project.contributions?.map((contribution, contributionIndex,) => <View
+                                    key={contributionIndex}
                                     style={{
                                         "flexDirection": `row`,
                                         "paddingHorizontal": 20,
@@ -266,7 +282,7 @@ const Resume = () => {
                                     </Text>
                                 </View>,)
                             }
-                        </>,)
+                        </View>,)
                     }
                 </View>
                 <View
@@ -287,7 +303,14 @@ const Resume = () => {
                             style={{
                                 "paddingLeft": 10,
                             }}>
-                            Languages:{arrayString(skills.filter((skill,) => skill.type === `language`,).map((skill,) => skill.title,),)}
+                            <Text
+                                style={{
+                                    "fontFamily": `Times-Bold`,
+                                }}>
+                                Languages:
+                            </Text>
+                            {arrayString(skills.filter((skill,) => skill.type === `language`,).sort((first, second,) => first.title.localeCompare(second.title,),).
+                                map((skill,) => skill.title,),)}
                         </Text>
                     </View>
                     <View
@@ -302,7 +325,14 @@ const Resume = () => {
                             style={{
                                 "paddingLeft": 10,
                             }}>
-                            Tools:{arrayString(skills.filter((skill,) => skill.type === `tool`,).map((skill,) => skill.title,),)}
+                            <Text
+                                style={{
+                                    "fontFamily": `Times-Bold`,
+                                }}>
+                                Tools:
+                            </Text>
+                            {arrayString(skills.filter((skill,) => skill.type === `tool`,).sort((first, second,) => first.title.localeCompare(second.title,),).
+                                map((skill,) => skill.title,),)}
                         </Text>
                     </View>
                     <View
@@ -317,7 +347,14 @@ const Resume = () => {
                             style={{
                                 "paddingLeft": 10,
                             }}>
-                            Methodologies:{arrayString(skills.filter((skill,) => skill.type === `methodology`,).map((skill,) => skill.title,),)}
+                            <Text
+                                style={{
+                                    "fontFamily": `Times-Bold`,
+                                }}>
+                                Methodologies:
+                            </Text>
+                            {arrayString(skills.filter((skill,) => skill.type === `methodology`,).sort((first, second,) => first.title.localeCompare(second.title,),).
+                                map((skill,) => skill.title,),)}
                         </Text>
                     </View>
                     <View
@@ -332,7 +369,14 @@ const Resume = () => {
                             style={{
                                 "paddingLeft": 10,
                             }}>
-                            Domains:{arrayString(skills.filter((skill,) => skill.type === `domain`,).map((skill,) => skill.title,),)}
+                            <Text
+                                style={{
+                                    "fontFamily": `Times-Bold`,
+                                }}>
+                                Domains:
+                            </Text>
+                            {arrayString(skills.filter((skill,) => skill.type === `domain`,).sort((first, second,) => first.title.localeCompare(second.title,),).
+                                map((skill,) => skill.title,),)}
                         </Text>
                     </View>
                     <View
@@ -347,18 +391,36 @@ const Resume = () => {
                             style={{
                                 "paddingLeft": 10,
                             }}>
-                            Soft:{arrayString(skills.filter((skill,) => skill.type === `soft`,).map((skill,) => skill.title,),)}
+                            <Text
+                                style={{
+                                    "fontFamily": `Times-Bold`,
+                                }}>
+                                Soft:
+                            </Text>
+                            {arrayString(skills.filter((skill,) => skill.type === `soft`,).sort((first, second,) => first.title.localeCompare(second.title,),).
+                                map((skill,) => skill.title,),)}
                         </Text>
                     </View>
                 </View>
             </Page>
         </Document>;
 
-    return <PDFViewer
-        className="width-100 viewport-height-90 padding-top-3"
-        showToolbar={true}>
-        <ResumeDocument />
-    </PDFViewer>;
+    return <>
+        <Helmet>
+            <title>{person.name}'s Resume</title>
+            <meta name="description" content={`${person.name}'s Resume`} />
+            <meta name="robots" content="noindex" />
+        </Helmet>
+        {
+            size === `large`
+                ? <PDFViewer
+                    className="width-100 viewport-height-90 padding-top-3"
+                    showToolbar={true}>
+                    <ResumeDocument />
+                </PDFViewer>
+                : <ScreenTooSmall />
+        }
+    </>;
 
 };
 

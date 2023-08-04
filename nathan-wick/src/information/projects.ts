@@ -15,9 +15,9 @@ import sprostImage from "../images/sprost.webp";
 const projects: Project[] = [
     {
         "contributions": [
-            `Developed a web application that provides real-time parking availability information to users, enabling them to make informed decisions about where to park on campus`,
-            `Utilized React, TypeScript, Bootstrap, and Google Firebase to build the application, which leverages cloud functions to call the University of Cincinnati's Parking Services API every hour and store the information in a database`,
-            `Displayed a map of the campus with pins on all parking facilities, allowing users to select a pin to view the facility's past, present, and estimated occupancy`,
+            `Created a real-time parking availability app with React, TypeScript, and Google Cloud Platform (GCP)`,
+            `Integrated cloud functions to fetch data from UC's Parking Services API and store it in a database`,
+            `Utilized a map-based interface to display parking occupancy, enabling informed decisions`,
         ],
         "description": [
             `CatMap is a web application designed to help users find parking on campus quickly and easily. It provides real-time information about the parking availability, so users can make informed decisions about where to park. The application also provides directions to any selected facility, so users can easily find their way to their destination.`,
@@ -26,7 +26,7 @@ const projects: Project[] = [
             `The application is a valuable resource for students, faculty, and staff who need to park on campus. It is also a useful tool for visitors who are unfamiliar with the campus.`,
         ],
         "domain": `https://catmap.nathanwick.com`,
-        "end": new Date(`2023-06-18`,),
+        "end": new Date(`2023-08-12`,),
         "image": catmapImage,
         "name": `CatMap`,
         "repository": `https://github.com/nathan-wick/catmap`,
@@ -40,9 +40,9 @@ const projects: Project[] = [
     },
     {
         "contributions": [
-            `Developed a cloud-based tool that simplifies the web development process for non-technical users`,
-            `Utilized pre-built components to allow users to quickly and easily build a web app without having to learn how to code`,
-            `Implemented a user-friendly interface that allows users to edit their web app to their liking`,
+            `Developed a user-friendly cloud-based tool, streamlining web development for non-technical users`,
+            `Implemented pre-built components, enabling code-free web app creation for users`,
+            `Designed an intuitive interface for easy customization of web apps`,
         ],
         "description": [
             `Sprost is a cloud-based tool that uses pre-built components to simplify the web development process. By using pre-built components, the user can quickly and easily build a web app without having to learn how to code.`,
@@ -65,9 +65,9 @@ const projects: Project[] = [
     },
     {
         "contributions": [
-            `Developed and deployed an iOS app that enables users to post found items on a map for others to see`,
-            `Utilized Swift, Xcode, and Google Firebase to build the app, which features a user-friendly interface and integrates with Google and Apple Sign-In for a secure and seamless sign-in experience`,
-            `Implemented a map-based interface that allows users to easily view found items and contact the user who posted them, helping to reunite lost items with their rightful owners and providing peace of mind to both users`,
+            `Developed and deployed an iOS app for users to post found items on a map`,
+            `Utilized Swift, Xcode, and Google Cloud Platform (GCP) for secure and seamless user experience`,
+            `Implemented a map-based interface for effortless viewing and contacting of item posters, promoting successful item reunification`,
         ],
         "description": [
             `A lost item can be a major inconvenience, but it can also be a source of stress and anxiety. If you've ever lost a valuable item, you know how frustrating it can be to try to track it down.`,
@@ -89,9 +89,9 @@ const projects: Project[] = [
     },
     {
         "contributions": [
-            `Led an agile team of 6 software developers to deliver a high-quality Android application on time`,
-            `Utilized the SCRUM project management framework to ensure that the project was well-organized and productive`,
-            `Programmed with the Android Studio IDE, Kotlin language, and Git version control system to create a robust and user-friendly application`,
+            `Led a 6-member agile team, delivering a high-quality Android app on time`,
+            `Utilized SCRUM for organized and productive project management`,
+            `Programmed a robust Android app, ensuring a user-friendly experience`,
         ],
         "description": [
             `MedPrompt is a native Android application that helps users stay organized and on top of their medication and doctor's appointments. The application was developed using the SCRUM project management framework and the Android Studio IDE, Kotlin language, and Git version control system.`,
