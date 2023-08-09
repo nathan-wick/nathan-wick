@@ -89,6 +89,7 @@ const Education = () => {
                                     {dateString(
                                         education.start,
                                         education.end,
+                                        true,
                                     )}<br />
                                     Grade Point Average (GPA): {education.gradePointAverage.toFixed(1,)}
                                 </div>

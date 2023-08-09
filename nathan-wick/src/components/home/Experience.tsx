@@ -89,6 +89,7 @@ const Experience = () => {
                                     {dateString(
                                         experience.start,
                                         experience.end,
+                                        true,
                                     )}
                                 </div>
                                 <div

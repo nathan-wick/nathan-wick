@@ -1,4 +1,4 @@
-import {Document, Link, PDFViewer, Page, StyleSheet, Text, View,} from "@react-pdf/renderer";
+import {Document, PDFViewer, Page, StyleSheet, Text, View,} from "@react-pdf/renderer";
 import {Helmet,} from "react-helmet-async";
 import ScreenTooSmall from "./ScreenTooSmall";
 import {WindowContext,} from "../contexts/Window";
@@ -100,10 +100,10 @@ const Resume = () => {
                                         "width": `100%`,
                                     }}>
                                     <Text>
-                                        {dateString(
-                                            education.start,
-                                            education.end,
-                                        )}
+                                        {education.end?.toLocaleString(
+                                            `default`,
+                                            {"month": `long`,},
+                                        )} {education.end?.getFullYear()}
                                     </Text>
                                 </View>
                             </View>

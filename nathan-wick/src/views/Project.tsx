@@ -55,6 +55,7 @@ const Project = () => {
                                         {dateString(
                                             project.start,
                                             project.end,
+                                            true,
                                         )}
                                     </div>
                                     {

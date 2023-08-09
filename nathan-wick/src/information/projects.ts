@@ -17,7 +17,7 @@ const projects: Project[] = [
         "contributions": [
             `Created a real-time parking availability app with React, TypeScript, and Google Cloud Platform (GCP)`,
             `Integrated cloud functions to fetch data from UC's Parking Services API and store it in a database`,
-            `Utilized a map-based interface to display parking occupancy, enabling informed decisions`,
+            `Deployed a map-based interface to display parking occupancy, enabling informed decisions`,
         ],
         "description": [
             `CatMap is a web application designed to help users find parking on campus quickly and easily. It provides real-time information about the parking availability, so users can make informed decisions about where to park. The application also provides directions to any selected facility, so users can easily find their way to their destination.`,
@@ -40,8 +40,8 @@ const projects: Project[] = [
     },
     {
         "contributions": [
-            `Developed a user-friendly cloud-based tool, streamlining web development for non-technical users`,
-            `Implemented pre-built components, enabling code-free web app creation for users`,
+            `Constructed a user-friendly cloud-based tool, streamlining web development for non-technical users`,
+            `Launched pre-built components, enabling code-free web app creation for users`,
             `Designed an intuitive interface for easy customization of web apps`,
         ],
         "description": [
@@ -65,9 +65,9 @@ const projects: Project[] = [
     },
     {
         "contributions": [
-            `Developed and deployed an iOS app for users to post found items on a map`,
+            `Produced an iOS app for users to post found items on a map`,
             `Utilized Swift, Xcode, and Google Cloud Platform (GCP) for secure and seamless user experience`,
-            `Implemented a map-based interface for effortless viewing and contacting of item posters, promoting successful item reunification`,
+            `Carried out a map-based interface for effortless viewing and contacting of item posters, promoting item reunification`,
         ],
         "description": [
             `A lost item can be a major inconvenience, but it can also be a source of stress and anxiety. If you've ever lost a valuable item, you know how frustrating it can be to try to track it down.`,
@@ -90,7 +90,7 @@ const projects: Project[] = [
     {
         "contributions": [
             `Led a 6-member agile team, delivering a high-quality Android app on time`,
-            `Utilized SCRUM for organized and productive project management`,
+            `Applied SCRUM for organized and productive project management`,
             `Programmed a robust Android app, ensuring a user-friendly experience`,
         ],
         "description": [
