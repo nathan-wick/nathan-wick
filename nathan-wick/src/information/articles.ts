@@ -3,7 +3,6 @@ import EightEssentialTypescriptDataStructures from "../components/articles/Eight
 import ProgrammingOneZeroOne from "../components/articles/ProgrammingOneZeroOne";
 import ThreeTraitsEveryGoodProgrammerHas from "../components/articles/ThreeTraitsEveryGoodProgrammerHas";
 import TimeComplexityExplainedSimple from "../components/articles/TimeComplexityExplainedSimple";
-import WhyYouShouldHireMe from "../components/articles/WhyYouShouldHireMe";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import eightEssentialTypescriptDataStructuresImage from "../images/data.webp";
@@ -18,13 +17,6 @@ import threeTraitsEveryGoodProgrammerHasImageImage from "../images/programmer.we
 import timeComplexityExplainedSimpleImage from "../images/time.webp";
 
 const articles: Article[] = [
-    {
-        "body": WhyYouShouldHireMe,
-        "date": new Date(`2023-8-8`,),
-        "description": `This article summarizes how I can use my skills and experience to improve your business.`,
-        "image": programmingOneZeroOne,
-        "name": `Why You Should Hire Me`,
-    },
     {
         "body": ProgrammingOneZeroOne,
         "date": new Date(`2023-8-1`,),
