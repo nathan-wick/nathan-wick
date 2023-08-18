@@ -1,16 +1,16 @@
 import {Project,} from "../types/Project";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import catmapImage from "../images/catmap.webp";
+import catmapImage from "../images/projects/catmap/cover.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import ifoundItImage from "../images/ifound-it.webp";
+import ifoundItImage from "../images/projects/ifoundit/cover.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import medpromptImage from "../images/medprompt.webp";
+import medpromptImage from "../images/projects/medprompt/cover.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import sprostImage from "../images/sprost.webp";
+import sprostImage from "../images/projects/sprost/cover.webp";
 
 const projects: Project[] = [
     {

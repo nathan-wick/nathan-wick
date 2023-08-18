@@ -1,5 +1,6 @@
 import {Article,} from "../types/Article";
 import EightEssentialTypescriptDataStructures from "../components/articles/EightEssentialTypescriptDataStructures";
+import MyGreatestStrength from "../components/articles/MyGreatestStrength";
 import ProgrammingOneZeroOne from "../components/articles/ProgrammingOneZeroOne";
 import ThreeTraitsEveryGoodProgrammerHas from "../components/articles/ThreeTraitsEveryGoodProgrammerHas";
 import TimeComplexityExplainedSimple from "../components/articles/TimeComplexityExplainedSimple";
@@ -8,7 +9,10 @@ import TimeComplexityExplainedSimple from "../components/articles/TimeComplexity
 import eightEssentialTypescriptDataStructuresImage from "../images/data.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import programmingOneZeroOne from "../images/laptop.webp";
+import myGreatestStrengthImage from "../images/strength.webp";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import programmingOneZeroOneImage from "../images/laptop.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import threeTraitsEveryGoodProgrammerHasImageImage from "../images/programmer.webp";
@@ -18,10 +22,17 @@ import timeComplexityExplainedSimpleImage from "../images/time.webp";
 
 const articles: Article[] = [
     {
+        "body": MyGreatestStrength,
+        "date": new Date(`2023-8-17`,),
+        "description": `This article introduces my greatest strength, with examples.`,
+        "image": myGreatestStrengthImage,
+        "name": `My Greatest Strength`,
+    },
+    {
         "body": ProgrammingOneZeroOne,
         "date": new Date(`2023-8-1`,),
         "description": `This article is a beginners guide to programming, with examples and a practice project.`,
-        "image": programmingOneZeroOne,
+        "image": programmingOneZeroOneImage,
         "name": `Programming 101`,
     },
     {
