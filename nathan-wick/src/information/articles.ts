@@ -1,5 +1,6 @@
 import {Article,} from "../types/Article";
 import EightEssentialTypescriptDataStructures from "../components/articles/EightEssentialTypescriptDataStructures";
+import IntroductionToScratch from "../components/articles/IntroductionToScratch";
 import MyGreatestStrength from "../components/articles/MyGreatestStrength";
 import ProgrammingOneZeroOne from "../components/articles/ProgrammingOneZeroOne";
 import ThreeTraitsEveryGoodProgrammerHas from "../components/articles/ThreeTraitsEveryGoodProgrammerHas";
@@ -7,6 +8,9 @@ import TimeComplexityExplainedSimple from "../components/articles/TimeComplexity
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import eightEssentialTypescriptDataStructuresImage from "../images/data.webp";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import introductionToScratchImage from "../images/scratch.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import myGreatestStrengthImage from "../images/strength.webp";
@@ -55,6 +59,13 @@ const articles: Article[] = [
         "description": `This article will cover 8 of the most important data structures, with code examples and explanations.`,
         "image": eightEssentialTypescriptDataStructuresImage,
         "name": `8 Essential Typescript Data Structures`,
+    },
+    {
+        "body": IntroductionToScratch,
+        "date": new Date(`2023-8-23`,),
+        "description": `This article is a beginners guide to Scratch, with examples and a practice project.`,
+        "image": introductionToScratchImage,
+        "name": `Introduction To Scratch`,
     },
 ];
 
