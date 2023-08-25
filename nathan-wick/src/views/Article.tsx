@@ -67,7 +67,7 @@ const Article = () => {
                     <div
                         className={`margin-auto ${
                             size === `large`
-                                ? `max-width-30 padding-1`
+                                ? `max-width-40 padding-1`
                                 : size === `medium`
                                     ? `max-width-60 padding-1`
                                     : `width-100`

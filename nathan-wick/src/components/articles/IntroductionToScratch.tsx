@@ -167,7 +167,7 @@ const IntroductionToScratch = <>
             <li>Similarly to how we choose our main character sprite, add a sprite to your project for your main character to walk on.</li>
             <li>Drag your main character above the new sprite.</li>
             <li>
-                Recreate the new code block chain shown below. The new code block chain should cause the main character fall unless it is touching the new sprite.
+                Recreate the new code block chain shown below. The new code block chain should cause the main character to fall unless it is touching the new sprite.
                 <img
                     className="width-100 rounded"
                     src={gravityImage}
@@ -181,7 +181,7 @@ const IntroductionToScratch = <>
     </div>
     <div
         className="text-small text-indent">
-        Use what you've learned today to cause the main character to jump when the up arrow key is pressed. Once you are done, click the button below for a solution.
+        Use what you've learned today to cause the main character to jump when the up arrow key is pressed. Once you're done, click the button below for a solution.
     </div>
     <HiddenSolution
         solution={<img
