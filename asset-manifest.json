@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4bb61d15.css",
-    "main.js": "/static/js/main.a5cae086.js",
+    "main.css": "/static/css/main.1e0969a7.css",
+    "main.js": "/static/js/main.091b3d96.js",
     "react-syntax-highlighter/refractor-core-import.js": "/static/js/react-syntax-highlighter/refractor-core-import.a7c11477.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/static/js/react-syntax-highlighter_languages_refractor_abap.0db16a08.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/static/js/react-syntax-highlighter_languages_refractor_actionscript.14659811.chunk.js",
@@ -161,6 +161,7 @@
     "static/media/portrait.webp": "/static/media/portrait.2fb12968bb622cc9640e.webp",
     "static/media/programmer.webp": "/static/media/programmer.d0775ee1f18223f48c6e.webp",
     "static/media/cover.webp": "/static/media/cover.1ec40188120f5424f707.webp",
+    "static/media/screenshot3.png": "/static/media/screenshot3.882f6e09a93e53986bcb.png",
     "static/media/university-of-cincinnati.webp": "/static/media/university-of-cincinnati.54bc3df2a16282654891.webp",
     "static/media/ChooseCustomBackdrop2.webp": "/static/media/ChooseCustomBackdrop2.b81c80e5c947ba785baa.webp",
     "static/media/data.webp": "/static/media/data.8570fc0b3a8ce625c05b.webp",
@@ -184,8 +185,8 @@
     "static/media/briefcase-light.svg": "/static/media/briefcase-light.8a9f19d44e15661405eeb0a46b000219.svg",
     "static/media/article-dark.svg": "/static/media/article-dark.26cd5db2fdef2412a608c1afcee2855c.svg",
     "static/media/article-light.svg": "/static/media/article-light.e649908902ac053621722ab716905258.svg",
-    "main.4bb61d15.css.map": "/static/css/main.4bb61d15.css.map",
-    "main.a5cae086.js.map": "/static/js/main.a5cae086.js.map",
+    "main.1e0969a7.css.map": "/static/css/main.1e0969a7.css.map",
+    "main.091b3d96.js.map": "/static/js/main.091b3d96.js.map",
     "refractor-core-import.a7c11477.chunk.js.map": "/static/js/react-syntax-highlighter/refractor-core-import.a7c11477.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.0db16a08.chunk.js.map": "/static/js/react-syntax-highlighter_languages_refractor_abap.0db16a08.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.14659811.chunk.js.map": "/static/js/react-syntax-highlighter_languages_refractor_actionscript.14659811.chunk.js.map",
@@ -340,7 +341,7 @@
     "react-syntax-highlighter_languages_refractor_yaml.a9884a00.chunk.js.map": "/static/js/react-syntax-highlighter_languages_refractor_yaml.a9884a00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bb61d15.css",
-    "static/js/main.a5cae086.js"
+    "static/css/main.1e0969a7.css",
+    "static/js/main.091b3d96.js"
   ]
 }
