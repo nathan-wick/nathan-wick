@@ -1,7 +1,7 @@
 import {Person,} from "../types/Person";
 
 const person: Person = {
-    "email": `nathanwick2001@gmail.com`,
+    "email": `wicknm@mail.uc.edu`,
     "name": `Nathan Wick`,
     "phone": `(937) 608-3851`,
     "tagline": `Unlocking Innovation through Code`,

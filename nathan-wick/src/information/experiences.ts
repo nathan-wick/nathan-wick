@@ -6,12 +6,12 @@ import UCITSCImage from "../images/uc-itsc-desk.webp";
 const experiences: Experience[] = [
     {
         "city": `Cincinnati`,
-        "company": `University of Cincinnati ITSC`,
+        "company": `University of Cincinnati`,
         "contributions": [
             `Developed React and TypeScript web apps, serving 1,000+ users`,
             `Designed scalable PostgreSQL databases, cutting development time by 30%`,
             `Reduced support tickets by 50% with welcome tours and clear diagrams`,
-            `Collaborated in agile team, delivering on-time, on-budget solutions`,
+            `Collaborated in an agile team, delivering on-time, on-budget solutions`,
             `Maintained proactive client communication, achieving 100% satisfaction`,
             `Ensured zero-security incidents by implementing user roles and permissions`,
         ],

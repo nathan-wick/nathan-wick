@@ -131,9 +131,32 @@ const Resume = () => {
                                     </Text>
                                 </View>
                             </View>
-                            <Text>
-                                {education.gradePointAverage.toFixed(1,)} GPA
-                            </Text>
+                            <View
+                                style={{
+                                    "flexDirection": `row`,
+                                    "paddingHorizontal": 20,
+                                }}>
+                                <Text>
+                                    •
+                                </Text>
+                                <Text
+                                    style={{"paddingLeft": 10,}}>
+                                    GPA: {education.gradePointAverage.toFixed(1,)}
+                                </Text>
+                            </View>
+                            <View
+                                style={{
+                                    "flexDirection": `row`,
+                                    "paddingHorizontal": 20,
+                                }}>
+                                <Text>
+                                    •
+                                </Text>
+                                <Text
+                                    style={{"paddingLeft": 10,}}>
+                                    Relevant Coursework:{arrayString(education.featuredCoursework,)}
+                                </Text>
+                            </View>
                         </View>,)
                     }
                 </View>
@@ -262,7 +285,7 @@ const Resume = () => {
                                 style={{
                                     "fontFamily": `Times-Italic`,
                                 }}>
-                                nathanwick.com/{project.name.toLowerCase().replace(
+                                nathanwick.com/projects/{project.name.toLowerCase().replace(
                                     / /gu,
                                     `-`,
                                 )}
