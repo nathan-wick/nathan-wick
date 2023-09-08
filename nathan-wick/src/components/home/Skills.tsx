@@ -34,7 +34,7 @@ const Skills = () => {
     return <>
         <div
             id="skills"
-            className="align-horizontal-center background-green-gradient-left">
+            className="align-horizontal-center">
             <img
                 alt="Skills"
                 className="icon-large"

@@ -33,43 +33,23 @@
 }
 
 .background-red {
-    background-image: linear-gradient(colors.$light-red, colors.$red);
-}
-
-.background-red-gradient-left {
-    background-image: radial-gradient(ellipse at center left, rgba(colors.$red, 0.2), transparent 60%);
+    background-image: linear-gradient(to left, colors.$light-red, colors.$red);
 }
 
 .background-yellow {
-    background-image: linear-gradient(colors.$light-yellow, colors.$yellow);
-}
-
-.background-yellow-gradient-left {
-    background-image: radial-gradient(ellipse at center left, rgba(colors.$yellow, 0.2), transparent 60%);
+    background-image: linear-gradient(to left, colors.$light-yellow, colors.$yellow);
 }
 
 .background-green {
-    background-image: linear-gradient(colors.$light-green, colors.$green);
-}
-
-.background-green-gradient-left {
-    background-image: radial-gradient(ellipse at center left, rgba(colors.$green, 0.2), transparent 60%);
+    background-image: linear-gradient(to left, colors.$light-green, colors.$green);
 }
 
 .background-blue {
-    background-image: linear-gradient(colors.$light-blue, colors.$blue);
-}
-
-.background-blue-gradient-right {
-    background-image: radial-gradient(ellipse at center right, rgba(colors.$blue, 0.2), transparent 60%);
+    background-image: linear-gradient(to left, colors.$light-blue, colors.$blue);
 }
 
 .background-purple {
-    background-image: linear-gradient(colors.$light-purple, colors.$purple);
-}
-
-.background-purple-gradient-right {
-    background-image: radial-gradient(ellipse at center right, rgba(colors.$purple, 0.2), transparent 60%);
+    background-image: linear-gradient(to left, colors.$light-purple, colors.$purple);
 }
 
 .background-colorful-light {

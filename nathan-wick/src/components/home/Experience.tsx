@@ -18,7 +18,7 @@ const Experience = () => {
     return <>
         <div
             id="experience"
-            className="align-horizontal-center background-blue-gradient-right">
+            className="align-horizontal-center">
             <img
                 alt="Experience"
                 className="icon-large"

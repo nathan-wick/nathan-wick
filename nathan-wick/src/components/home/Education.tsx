@@ -18,7 +18,7 @@ const Education = () => {
     return <>
         <div
             id="education"
-            className="align-horizontal-center background-red-gradient-left">
+            className="align-horizontal-center">
             <img
                 alt="Education"
                 className="icon-large"
