@@ -10,7 +10,7 @@ import coappImage from "../../images/projects/coapp/screenshot3.png";
 const MyGreatestStrength = <>
     <div
         className="text-small text-indent">
-        My greatest strength is <b>problem-solving</b>. This is a strength for me because I enjoy solving problems and I solve problems often.
+        My greatest strength is problem-solving. This is a strength for me because I enjoy solving problems and I solve problems often.
     </div>
     <div
         className="text-medium">
