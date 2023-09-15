@@ -4,6 +4,9 @@ import {Project,} from "../types/Project";
 import catmapImage from "../images/projects/catmap/cover.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
+import gamesGaloreImage from "../images/projects/gamesgalore/cover.webp";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import ifoundItImage from "../images/projects/ifoundit/cover.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -104,6 +107,28 @@ const projects: Project[] = [
         "repository": `https://github.com/nathan-wick/medprompt`,
         "start": new Date(`2022-05-11`,),
         "summary": `This Android application helps users stay organized and on top of their medication and doctor's appointments.`,
+        "version": {
+            "major": 1,
+            "minor": 0,
+            "patch": 0,
+        },
+    },
+    {
+        "contributions": [
+            `Developed a web application using the Microsoft .NET framework and MVC design pattern to help users donate and receive video games`,
+            `Styled the web application using the Bootstrap CSS framework to ensure a consistent look and feel on all devices`,
+            `Designed and implemented a SQL database to store data for video games`,
+        ],
+        "description": [
+            `Games Galore is a web application that facilitates the donation and receipt of video games. The application was built using Microsoft .NET, MVC, SQL, and Bootstrap.`,
+            `Games Galore has made video games more accessible to people of all socioeconomic backgrounds and has also created a community where people can connect with each other and share their love of video games.`,
+        ],
+        "end": new Date(`2022-04-21`,),
+        "image": gamesGaloreImage,
+        "name": `Games Galore`,
+        "repository": `https://github.com/nathan-wick/games-galore`,
+        "start": new Date(`2022-03-23`,),
+        "summary": `This web application acts as a video game library to help users donate and receive video games.`,
         "version": {
             "major": 1,
             "minor": 0,
