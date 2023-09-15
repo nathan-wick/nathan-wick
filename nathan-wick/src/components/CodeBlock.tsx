@@ -1,5 +1,6 @@
 import React, {FC, useContext,} from "react";
-import {CodeBlock as ReactCodeBlock, dracula, monoBlue,} from "react-code-blocks";
+import {a11yDark, a11yLight,} from "react-syntax-highlighter/dist/esm/styles/hljs";
+import SyntaxHighlighter from 'react-syntax-highlighter';
 import {ThemeContext,} from "../contexts/Theme";
 
 const CodeBlock: FC<{
@@ -11,14 +12,13 @@ const CodeBlock: FC<{
 
     return <div
         className="text-small">
-        <ReactCodeBlock
-            text={code}
+        <SyntaxHighlighter
             language={language}
-            showLineNumbers={false}
-            theme={theme === `light`
-                ? monoBlue
-                : dracula}
-            wrapLongLines={true} />
+            style={theme === `light`
+                ? a11yLight
+                : a11yDark}>
+            {code}
+        </SyntaxHighlighter>
     </div>;
 
 };
