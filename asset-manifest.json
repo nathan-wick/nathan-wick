@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e0969a7.css",
-    "main.js": "/static/js/main.21a6b559.js",
+    "main.css": "/static/css/main.2b516f6d.css",
+    "main.js": "/static/js/main.53450a1c.js",
     "static/media/strength.webp": "/static/media/strength.dc6c80bec0a1f23a4dc3.webp",
     "static/media/time.webp": "/static/media/time.4bae0e29f2ebff74f7bd.webp",
     "static/media/laptop.webp": "/static/media/laptop.72d6c2dc1b726f7d5805.webp",
@@ -9,7 +9,6 @@
     "static/media/portrait.webp": "/static/media/portrait.2fb12968bb622cc9640e.webp",
     "static/media/programmer.webp": "/static/media/programmer.d0775ee1f18223f48c6e.webp",
     "static/media/cover.webp": "/static/media/cover.1ec40188120f5424f707.webp",
-    "static/media/screenshot3.png": "/static/media/screenshot3.882f6e09a93e53986bcb.png",
     "static/media/university-of-cincinnati.webp": "/static/media/university-of-cincinnati.54bc3df2a16282654891.webp",
     "static/media/ChooseCustomBackdrop2.webp": "/static/media/ChooseCustomBackdrop2.b81c80e5c947ba785baa.webp",
     "static/media/data.webp": "/static/media/data.8570fc0b3a8ce625c05b.webp",
@@ -19,9 +18,18 @@
     "static/media/c-sharp.webp": "/static/media/c-sharp.b433d27bebad7fa0d53c.webp",
     "static/media/MoveLeft.webp": "/static/media/MoveLeft.0e6f459921289047d45d.webp",
     "static/media/MoveRight.webp": "/static/media/MoveRight.b7c86ac61e451f98d382.webp",
+    "static/media/screenshot8.webp": "/static/media/screenshot8.4c231f59012c9e6c628f.webp",
+    "static/media/screenshot2.webp": "/static/media/screenshot2.7f383703da8419e0eb73.webp",
+    "static/media/screenshot1.webp": "/static/media/screenshot1.56ce12bbec72415aa34f.webp",
+    "static/media/screenshot3.webp": "/static/media/screenshot3.a751cf4c1f3d8938a864.webp",
+    "static/media/screenshot9.webp": "/static/media/screenshot9.a563d001534260866599.webp",
     "static/media/DeleteDefaultSprite.webp": "/static/media/DeleteDefaultSprite.b20b52168b89d249d4c8.webp",
+    "static/media/screenshot5.webp": "/static/media/screenshot5.c9ee1ba36612c98ef93f.webp",
+    "static/media/screenshot6.webp": "/static/media/screenshot6.943ec9bfce62b1ebcef7.webp",
     "static/media/ChooseCustomBackdrop.webp": "/static/media/ChooseCustomBackdrop.5e2e4faf276e8b58a433.webp",
     "static/media/ChooseCustomSprite.webp": "/static/media/ChooseCustomSprite.b2cda64867b62396e309.webp",
+    "static/media/screenshot4.webp": "/static/media/screenshot4.7c6499ccf30aa2f03575.webp",
+    "static/media/screenshot7.webp": "/static/media/screenshot7.8f7a3dfa92a339d73501.webp",
     "static/media/scratch.webp": "/static/media/scratch.ca27a04018caa92e359f.webp",
     "index.html": "/index.html",
     "static/media/wrench-dark.svg": "/static/media/wrench-dark.6c4d23cb6c652922982ec0d2ae2ea1ad.svg",
@@ -34,11 +42,11 @@
     "static/media/briefcase-light.svg": "/static/media/briefcase-light.8a9f19d44e15661405eeb0a46b000219.svg",
     "static/media/article-dark.svg": "/static/media/article-dark.26cd5db2fdef2412a608c1afcee2855c.svg",
     "static/media/article-light.svg": "/static/media/article-light.e649908902ac053621722ab716905258.svg",
-    "main.1e0969a7.css.map": "/static/css/main.1e0969a7.css.map",
-    "main.21a6b559.js.map": "/static/js/main.21a6b559.js.map"
+    "main.2b516f6d.css.map": "/static/css/main.2b516f6d.css.map",
+    "main.53450a1c.js.map": "/static/js/main.53450a1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e0969a7.css",
-    "static/js/main.21a6b559.js"
+    "static/css/main.2b516f6d.css",
+    "static/js/main.53450a1c.js"
   ]
 }
