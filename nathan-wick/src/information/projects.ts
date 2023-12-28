@@ -30,6 +30,12 @@ const catmapImages = require.context(
     ),
     sprostImagesList = sprostImages.keys().
         map((image,) => String(sprostImages(image,),),),
+    woforoImages = require.context(
+        `../images/projects/woforo`,
+        false,
+    ),
+    woforoImagesList = woforoImages.keys().
+        map((image,) => String(woforoImages(image,),),),
     projects: Project[] = [
         {
             "contributions": [
@@ -81,6 +87,25 @@ const catmapImages = require.context(
                 "major": 0,
                 "minor": 12,
                 "patch": 4,
+            },
+        },
+        {
+            "contributions": [
+                `Applied SCRUM for organized and productive project management`,
+                `Led a 3-member agile team, delivering a high-quality Apple, Android, and web app`,
+                `Utilized Flutter and Google Cloud Platform (GCP) for secure and seamless user experience`,
+            ],
+            "description": [`Teachers build courses, create assignments, and track progress with visual graphs. Students join with a code and grab their course materials while online. Then, conquer assignments anywhere, anytime, even without the internet. Just sync your work back when you're online again!`,],
+            "end": new Date(`2023-12-29`,),
+            "image": woforoImagesList[0],
+            "name": `Woforo`,
+            "screenshots": woforoImagesList,
+            "start": new Date(`2023-10-2`,),
+            "summary": `This all-in-one app for Apple, Android, and Web makes teaching and learning a breeze, even offline!`,
+            "version": {
+                "major": 1,
+                "minor": 0,
+                "patch": 0,
             },
         },
         {

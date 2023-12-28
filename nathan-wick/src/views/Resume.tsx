@@ -19,7 +19,7 @@ const Resume = () => {
     const {size,} = useContext(WindowContext,),
         maximumEducations = 1,
         maximumExperiences = 1,
-        maximumProjects = 4,
+        maximumProjects = 3,
         styles = StyleSheet.create({
             "heading": {
                 "textAlign": `center`,
