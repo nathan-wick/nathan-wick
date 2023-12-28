@@ -11,7 +11,7 @@ input {
 }
 
 button {
-    background-image: linear-gradient(to left, colors.$light-blue , colors.$blue);
+    background-image: linear-gradient(to bottom, colors.$light-blue , colors.$blue);
     border: none;
     border-radius: 0.4rem;
     color: colors.$black;
@@ -25,82 +25,82 @@ button {
 }
 
 button:hover {
-    background-image: linear-gradient(to left, colors.$blue , colors.$blue);
+    background-image: linear-gradient(to bottom, colors.$blue , colors.$blue);
 }
 
 button:active {
-    background-image: linear-gradient(to left, colors.$light-blue , colors.$light-blue);
+    background-image: linear-gradient(to bottom, colors.$light-blue , colors.$light-blue);
 }
 
 .button-white {
-    background-image: linear-gradient(to left, colors.$white , colors.$dark-white);
+    background-image: linear-gradient(to bottom, colors.$white , colors.$dark-white);
 }
 
 .button-white:hover {
-    background-image: linear-gradient(to left, colors.$dark-white , colors.$dark-white);
+    background-image: linear-gradient(to bottom, colors.$dark-white , colors.$dark-white);
 }
 
 .button-white:active {
-    background-image: linear-gradient(to left, colors.$white , colors.$white);
+    background-image: linear-gradient(to bottom, colors.$white , colors.$white);
 }
 
 .button-black {
-    background-image: linear-gradient(to left, colors.$black , colors.$light-black);
+    background-image: linear-gradient(to bottom, colors.$black , colors.$light-black);
     color: colors.$white;
 }
 
 .button-black:hover {
-    background-image: linear-gradient(to left, colors.$light-black , colors.$light-black);
+    background-image: linear-gradient(to bottom, colors.$light-black , colors.$light-black);
 }
 
 .button-black:active {
-    background-image: linear-gradient(to left, colors.$black , colors.$black);
+    background-image: linear-gradient(to bottom, colors.$black , colors.$black);
 }
 
 .button-purple {
-    background-image: linear-gradient(to left, colors.$light-purple , colors.$purple);
+    background-image: linear-gradient(to bottom, colors.$light-purple , colors.$purple);
 }
 
 .button-purple:hover {
-    background-image: linear-gradient(to left, colors.$purple , colors.$purple);
+    background-image: linear-gradient(to bottom, colors.$purple , colors.$purple);
 }
 
 .button-purple:active {
-    background-image: linear-gradient(to left, colors.$light-purple , colors.$light-purple);
+    background-image: linear-gradient(to bottom, colors.$light-purple , colors.$light-purple);
 }
 
 .button-yellow {
-    background-image: linear-gradient(to left, colors.$light-yellow , colors.$yellow);
+    background-image: linear-gradient(to bottom, colors.$light-yellow , colors.$yellow);
 }
 
 .button-yellow:hover {
-    background-image: linear-gradient(to left, colors.$yellow , colors.$yellow);
+    background-image: linear-gradient(to bottom, colors.$yellow , colors.$yellow);
 }
 
 .button-yellow:active {
-    background-image: linear-gradient(to left, colors.$light-yellow , colors.$light-yellow);
+    background-image: linear-gradient(to bottom, colors.$light-yellow , colors.$light-yellow);
 }
 
 .button-red {
-    background-image: linear-gradient(to left, colors.$light-red , colors.$red);
+    background-image: linear-gradient(to bottom, colors.$light-red , colors.$red);
 }
 
 .button-red:hover {
-    background-image: linear-gradient(to left, colors.$red , colors.$red);
+    background-image: linear-gradient(to bottom, colors.$red , colors.$red);
 }
 
 .button-red:active {
-    background-image: linear-gradient(to left, colors.$light-red , colors.$light-red);
+    background-image: linear-gradient(to bottom, colors.$light-red , colors.$light-red);
 }
 
 .button-green {
-    background-image: linear-gradient(to left, colors.$light-green , colors.$green);
+    background-image: linear-gradient(to bottom, colors.$light-green , colors.$green);
 }
 
 .button-green:hover {
-    background-image: linear-gradient(to left, colors.$green , colors.$green);
+    background-image: linear-gradient(to bottom, colors.$green , colors.$green);
 }
 
 .button-green:active {
-    background-image: linear-gradient(to left, colors.$light-green , colors.$light-green);
+    background-image: linear-gradient(to bottom, colors.$light-green , colors.$light-green);
 }
