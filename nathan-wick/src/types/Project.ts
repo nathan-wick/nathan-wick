@@ -12,4 +12,5 @@ export declare interface Project {
     description?: string[],
     contributions?: string[],
     relatedSkills?: string[],
+    screenshots?: string[],
 }

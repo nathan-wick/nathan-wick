@@ -91,7 +91,7 @@ const Resume = () => {
                                         style={{
                                             "fontFamily": `Times-Bold`,
                                         }}>
-                                        {education.degree}, {education.major}
+                                        {education.degree}
                                     </Text>
                                 </View>
                                 <View
@@ -142,6 +142,19 @@ const Resume = () => {
                                 <Text
                                     style={{"paddingLeft": 10,}}>
                                     GPA: {education.gradePointAverage.toFixed(1,)}
+                                </Text>
+                            </View>
+                            <View
+                                style={{
+                                    "flexDirection": `row`,
+                                    "paddingHorizontal": 20,
+                                }}>
+                                <Text>
+                                    •
+                                </Text>
+                                <Text
+                                    style={{"paddingLeft": 10,}}>
+                                    Major: {education.major}
                                 </Text>
                             </View>
                             <View

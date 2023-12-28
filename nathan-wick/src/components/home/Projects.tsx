@@ -73,7 +73,7 @@ const Projects = () => {
                             <img
                                 className="width-100 rounded"
                                 src={project.image}
-                                alt={project.name} />
+                                alt={project.name}/>
                             <div
                                 className="text-medium">
                                 {project.name}

@@ -104,13 +104,13 @@ const Project = () => {
                             {project.summary}
                         </div>
                         {
-                            project.description?.length && <>
+                            (project.description?.length ?? 0) > 0 && <>
                                 <div
                                     className="text-medium">
                                     Description
                                 </div>
                                 {
-                                    project.description.map((description, descriptionIndex,) => <div
+                                    project.description?.map((description, descriptionIndex,) => <div
                                         key={descriptionIndex}
                                         className="text-small text-indent">
                                         {description}
@@ -119,7 +119,7 @@ const Project = () => {
                             </>
                         }
                         {
-                            project.contributions?.length && <>
+                            (project.contributions?.length ?? 0) > 0 && <>
                                 <div
                                     className="text-medium">
                                     {person.name}'s Contributions
@@ -128,13 +128,28 @@ const Project = () => {
                                     className="text-small">
                                     <ul>
                                         {
-                                            project.contributions.map((contribution, contributionIndex,) => <li
+                                            project.contributions?.map((contribution, contributionIndex,) => <li
                                                 key={contributionIndex}>
                                                 {contribution}
                                             </li>,)
                                         }
                                     </ul>
                                 </div>
+                            </>
+                        }
+                        {
+                            (project.screenshots?.length ?? 0) > 0 && <>
+                                <div
+                                    className="text-medium">
+                                    Screenshots
+                                </div>
+                                {
+                                    project.screenshots?.map((screenshot, screenshotIndex,) => <img
+                                        key={screenshotIndex}
+                                        className="width-100 rounded"
+                                        src={screenshot}
+                                        alt={project.name}/>,)
+                                }
                             </>
                         }
                     </div>

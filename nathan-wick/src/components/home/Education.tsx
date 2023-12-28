@@ -85,13 +85,14 @@ const Education = () => {
                                 </div>
                                 <div
                                     className="text-small">
-                                    {education.degree}, {education.major}<br />
                                     {dateString(
                                         education.start,
                                         education.end,
                                         true,
-                                    )}<br />
-                                    Grade Point Average (GPA): {education.gradePointAverage.toFixed(1,)}
+                                    )}<br/><br/>
+                                    {education.degree}<br/>
+                                    {education.major}<br/>
+                                    GPA: {education.gradePointAverage.toFixed(1,)}
                                 </div>
                                 <div
                                     className="align-horizontal-left">

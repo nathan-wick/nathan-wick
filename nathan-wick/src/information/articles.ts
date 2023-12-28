@@ -30,32 +30,11 @@ import timeComplexityExplainedSimpleImage from "../images/time.webp";
 
 const articles: Article[] = [
     {
-        "body": EightEssentialCSharpConcepts,
-        "date": new Date(`2022-4-25`,),
-        "description": `This article will cover 8 of the most important C# concepts, with code examples and explanations.`,
-        "image": eightEssentialCSharpConceptsImage,
-        "name": `8 Essential C Sharp Concepts`,
-    },
-    {
-        "body": MyGreatestStrength,
-        "date": new Date(`2023-8-17`,),
-        "description": `This article introduces my greatest strength, problem-solving, with examples.`,
-        "image": myGreatestStrengthImage,
-        "name": `My Greatest Strength`,
-    },
-    {
         "body": ProgrammingOneZeroOne,
         "date": new Date(`2023-8-1`,),
         "description": `This article is a beginners guide to programming, with examples and a practice project.`,
         "image": programmingOneZeroOneImage,
         "name": `Programming 101`,
-    },
-    {
-        "body": ThreeTraitsEveryGoodProgrammerHas,
-        "date": new Date(`2022-4-27`,),
-        "description": `Learn the 3 essential traits that every good programmer has, and start developing them today!`,
-        "image": threeTraitsEveryGoodProgrammerHasImageImage,
-        "name": `3 Traits Every Good Programmer Has`,
     },
     {
         "body": TimeComplexityExplainedSimple,
@@ -70,6 +49,27 @@ const articles: Article[] = [
         "description": `This article will cover 8 of the most important data structures, with code examples and explanations.`,
         "image": eightEssentialTypescriptDataStructuresImage,
         "name": `8 Essential Typescript Data Structures`,
+    },
+    {
+        "body": MyGreatestStrength,
+        "date": new Date(`2023-8-17`,),
+        "description": `This article introduces my greatest strength, problem-solving, with examples.`,
+        "image": myGreatestStrengthImage,
+        "name": `My Greatest Strength`,
+    },
+    {
+        "body": ThreeTraitsEveryGoodProgrammerHas,
+        "date": new Date(`2022-4-27`,),
+        "description": `Learn the 3 essential traits that every good programmer has, and start developing them today!`,
+        "image": threeTraitsEveryGoodProgrammerHasImageImage,
+        "name": `3 Traits Every Good Programmer Has`,
+    },
+    {
+        "body": EightEssentialCSharpConcepts,
+        "date": new Date(`2022-4-25`,),
+        "description": `This article will cover 8 of the most important C# concepts, with code examples and explanations.`,
+        "image": eightEssentialCSharpConceptsImage,
+        "name": `8 Essential C Sharp Concepts`,
     },
     {
         "body": IntroductionToScratch,

@@ -5,7 +5,7 @@ import React from "react";
 import catmapImage from "../../images/projects/catmap/cover.webp";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import coappImage from "../../images/projects/coapp/screenshot3.png";
+import coappImage from "../../images/projects/coapp/screenshot3.webp";
 
 const MyGreatestStrength = <>
     <div
