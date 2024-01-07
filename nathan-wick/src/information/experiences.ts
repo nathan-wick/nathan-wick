@@ -1,9 +1,22 @@
 import {Experience,} from "../types/Experience";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
+import LCSImage from "../images/lcs.webp";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import UCITSCImage from "../images/uc-itsc-desk.webp";
 
 const experiences: Experience[] = [
+    {
+        "city": `Cincinnati`,
+        "company": `London Computer Systems`,
+        "contributions": [],
+        "description": [],
+        "image": LCSImage,
+        "start": new Date(`2024-01-02`,),
+        "state": `Ohio`,
+        "title": `Software Developer`,
+    },
     {
         "city": `Cincinnati`,
         "company": `University of Cincinnati`,

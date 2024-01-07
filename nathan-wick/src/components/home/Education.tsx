@@ -59,7 +59,9 @@ const Education = () => {
                             </div>
                         }
                         <div
-                            className="padding-1">
+                            className={size === `small`
+                                ? `padding-1`
+                                : `padding-3`}>
                             <div
                                 className={`width-fit-content rounded ${
                                     theme === `light`
@@ -85,11 +87,10 @@ const Education = () => {
                                 </div>
                                 <div
                                     className="text-small">
-                                    {dateString(
-                                        education.start,
-                                        education.end,
-                                        true,
-                                    )}<br/><br/>
+                                    {education.end?.toLocaleString(
+                                        `default`,
+                                        {"month": `long`,},
+                                    )} {education.end?.getFullYear()}<br/><br/>
                                     {education.degree}<br/>
                                     {education.major}<br/>
                                     GPA: {education.gradePointAverage.toFixed(1,)}

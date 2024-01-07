@@ -59,7 +59,9 @@ const Experience = () => {
                             </div>
                         }
                         <div
-                            className="padding-1">
+                            className={size === `small`
+                                ? `padding-1`
+                                : `padding-3`}>
                             <div
                                 className={`width-fit-content rounded ${
                                     theme === `light`
@@ -89,24 +91,25 @@ const Experience = () => {
                                     {dateString(
                                         experience.start,
                                         experience.end,
-                                        true,
                                     )}
                                 </div>
-                                <div
-                                    className="align-horizontal-left">
-                                    <div
-                                        className="text-small">
-                                        Featured Contributions:
-                                        <ul>
-                                            {
-                                                experience.contributions.map((contribution, contributionIndex,) => <li
-                                                    key={contributionIndex}>
-                                                    {contribution}
-                                                </li>,)
-                                            }
-                                        </ul>
+                                {
+                                    experience.contributions.length > 0 && <div
+                                        className="align-horizontal-left">
+                                        <div
+                                            className="text-small">
+                                            Featured Contributions:
+                                            <ul>
+                                                {
+                                                    experience.contributions.map((contribution, contributionIndex,) => <li
+                                                        key={contributionIndex}>
+                                                        {contribution}
+                                                    </li>,)
+                                                }
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
+                                }
                             </div>
                         </div>
                         {
