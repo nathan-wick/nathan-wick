@@ -2,202 +2,127 @@ import {Skill,} from "../types/Skill";
 
 const skills: Skill[] = [
     {
-        "title": `Python`,
-        "type": `language`,
-    },
-    {
-        "title": `SQL`,
-        "type": `language`,
-    },
-    {
-        "title": `Java`,
-        "type": `language`,
-    },
-    {
-        "title": `JavaScript`,
-        "type": `language`,
-    },
-    {
-        "title": `C++`,
-        "type": `language`,
-    },
-    {
-        "title": `C#`,
-        "type": `language`,
-    },
-    {
-        "title": `HTML`,
-        "type": `language`,
-    },
-    {
-        "title": `CSS`,
-        "type": `language`,
-    },
-    {
-        "title": `Swift`,
-        "type": `language`,
-    },
-    {
-        "title": `Kotlin`,
-        "type": `language`,
-    },
-    {
+        "proficiency": 1,
         "title": `TypeScript`,
         "type": `language`,
     },
     {
+        "proficiency": 1,
+        "title": `Dart`,
+        "type": `language`,
+    },
+    {
+        "proficiency": 1,
+        "title": `C#`,
+        "type": `language`,
+    },
+    {
+        "proficiency": 0.8,
+        "title": `SQL`,
+        "type": `language`,
+    },
+    {
+        "proficiency": 1,
+        "title": `SCSS`,
+        "type": `language`,
+    },
+    {
+        "proficiency": 1,
         "title": `Git`,
         "type": `tool`,
     },
     {
-        "title": `GitHub`,
-        "type": `tool`,
-    },
-    {
-        "title": `Eclipse`,
-        "type": `tool`,
-    },
-    {
-        "title": `Visual Studio Code`,
-        "type": `tool`,
-    },
-    {
-        "title": `Visual Studio`,
-        "type": `tool`,
-    },
-    {
-        "title": `Xcode`,
-        "type": `tool`,
-    },
-    {
-        "title": `Android Studio`,
-        "type": `tool`,
-    },
-    {
-        "title": `Google Cloud Platform (GCP)`,
-        "type": `tool`,
-    },
-    {
+        "proficiency": 1,
         "title": `React`,
         "type": `tool`,
     },
     {
+        "proficiency": 0.6,
         "title": `Angular`,
         "type": `tool`,
     },
     {
-        "title": `Node.js`,
+        "proficiency": 1,
+        "title": `Flutter`,
         "type": `tool`,
     },
     {
+        "proficiency": 0.8,
         "title": `.NET Framework`,
         "type": `tool`,
     },
     {
-        "title": `Spring Boot`,
-        "type": `tool`,
-    },
-    {
-        "title": `PostgreSQL`,
-        "type": `tool`,
-    },
-    {
-        "title": `Bootstrap`,
-        "type": `tool`,
-    },
-    {
+        "proficiency": 1,
         "title": `Data Structures and Algorithms`,
         "type": `methodology`,
     },
     {
-        "title": `Machine Learning`,
-        "type": `methodology`,
-    },
-    {
-        "title": `Artificial Intelligence`,
-        "type": `methodology`,
-    },
-    {
-        "title": `DevOps`,
-        "type": `methodology`,
-    },
-    {
-        "title": `Cybersecurity`,
-        "type": `methodology`,
-    },
-    {
+        "proficiency": 1,
         "title": `Agile Development`,
         "type": `methodology`,
     },
     {
+        "proficiency": 0.8,
         "title": `Test-Driven Development`,
         "type": `methodology`,
     },
     {
+        "proficiency": 1,
         "title": `Continuous Integration and Continuous Delivery (CI/CD)`,
         "type": `methodology`,
     },
     {
+        "proficiency": 1,
         "title": `Version Control`,
         "type": `methodology`,
     },
     {
-        "title": `Object-Oriented Programming`,
-        "type": `methodology`,
-    },
-    {
+        "proficiency": 1,
         "title": `Web Development`,
         "type": `domain`,
     },
     {
+        "proficiency": 0.8,
         "title": `Mobile Development`,
         "type": `domain`,
     },
     {
-        "title": `Embedded Systems Development`,
-        "type": `domain`,
-    },
-    {
-        "title": `Data Visualization`,
-        "type": `domain`,
-    },
-    {
+        "proficiency": 1,
         "title": `User Experience (UX) Design`,
         "type": `domain`,
     },
     {
+        "proficiency": 1,
         "title": `User Interface (UI) Design`,
         "type": `domain`,
     },
     {
+        "proficiency": 1,
         "title": `Full Stack Development`,
         "type": `domain`,
     },
     {
+        "proficiency": 1,
         "title": `Problem Solving`,
         "type": `soft`,
     },
     {
+        "proficiency": 0.8,
         "title": `Communication`,
         "type": `soft`,
     },
     {
+        "proficiency": 1,
         "title": `Teamwork`,
         "type": `soft`,
     },
     {
-        "title": `Critical Thinking`,
-        "type": `soft`,
-    },
-    {
+        "proficiency": 1,
         "title": `Self-Learning`,
         "type": `soft`,
     },
     {
-        "title": `Troubleshooting`,
-        "type": `soft`,
-    },
-    {
+        "proficiency": 1,
         "title": `Creativity`,
         "type": `soft`,
     },

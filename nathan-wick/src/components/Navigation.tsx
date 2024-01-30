@@ -90,9 +90,7 @@ const Navigation = () => {
 
     return <>
         <div
-            className={`navigation fade-in-out ${theme} ${scroll > 1
-                ? `show`
-                : `hide`} ${
+            className={`navigation ${theme} ${
                 size === `large` || menuIsOpen === true
                     ? `row-2`
                     : `row-auto-min`

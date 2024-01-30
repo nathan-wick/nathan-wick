@@ -10,7 +10,13 @@ const experiences: Experience[] = [
     {
         "city": `Cincinnati`,
         "company": `London Computer Systems`,
-        "contributions": [],
+        "contributions": [
+            `Enhanced user experience through critical system fixes and improved functionalities`,
+            `Developed backend components for key features, ensuring efficient data utilization`,
+            `Collaborated effectively with colleagues to deliver valuable enhancements`,
+            `Proactively identified and reported potential issues, ensuring quality assurance`,
+            `Committed to continuous learning through dedicated training and individual efforts`,
+        ],
         "description": [],
         "image": LCSImage,
         "start": new Date(`2024-01-02`,),
