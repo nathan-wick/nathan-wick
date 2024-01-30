@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b516f6d.css",
-    "main.js": "/static/js/main.53450a1c.js",
+    "main.css": "/static/css/main.43080b79.css",
+    "main.js": "/static/js/main.3cc61b98.js",
     "static/media/strength.webp": "/static/media/strength.dc6c80bec0a1f23a4dc3.webp",
     "static/media/time.webp": "/static/media/time.4bae0e29f2ebff74f7bd.webp",
+    "static/media/lcs.webp": "/static/media/lcs.2f0c830bfcd4b57eb6de.webp",
     "static/media/laptop.webp": "/static/media/laptop.72d6c2dc1b726f7d5805.webp",
     "static/media/uc-itsc-desk.webp": "/static/media/uc-itsc-desk.6f374537f7b1774db93e.webp",
     "static/media/portrait.webp": "/static/media/portrait.2fb12968bb622cc9640e.webp",
@@ -42,11 +43,11 @@
     "static/media/briefcase-light.svg": "/static/media/briefcase-light.8a9f19d44e15661405eeb0a46b000219.svg",
     "static/media/article-dark.svg": "/static/media/article-dark.26cd5db2fdef2412a608c1afcee2855c.svg",
     "static/media/article-light.svg": "/static/media/article-light.e649908902ac053621722ab716905258.svg",
-    "main.2b516f6d.css.map": "/static/css/main.2b516f6d.css.map",
-    "main.53450a1c.js.map": "/static/js/main.53450a1c.js.map"
+    "main.43080b79.css.map": "/static/css/main.43080b79.css.map",
+    "main.3cc61b98.js.map": "/static/js/main.3cc61b98.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b516f6d.css",
-    "static/js/main.53450a1c.js"
+    "static/css/main.43080b79.css",
+    "static/js/main.3cc61b98.js"
   ]
 }
